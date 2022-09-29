@@ -2,7 +2,7 @@ Understanding diffusion models (1): DDPM
 
 $$x_t = \alpha_tx_{t-1} + \beta_t\varepsilon_t\, , \ \varepsilon_t \sim Normal \ (0,I)$$
 
-We have $\alpha_t, \beta_t > 0$ and $\alpha_t^2 + \beta_t^2 = 1$
+We have $\alpha_t, \beta_t > 0$ and $\alpha_t^2 + \beta_t^2 = 1$ (an extra constraint which makes the subsequent calculation easier and which is reasonable because if you add more noise, the left part of the data is less).
 
 $$\begin{eqnarray}
 x_t &=& \alpha_tx_{t-1} + \beta_t\varepsilon_t\\
