@@ -38,8 +38,8 @@ $\begin{eqnarray}
 
 Now we have
 
-$\begin{eqnarray}
-&& (\alpha_t...\alpha_1)^2+(\alpha_t...\alpha_2)^2\beta_1^2 + (\alpha_t...\alpha_3)^2\beta_2^2 + ... + \alpha_t^2\beta_{t-1}^2 + \beta_t^2\\
-&=& \alpha_t^2 + \beta_t^2\\
-&=& 1
-\end{eqnarray}$
+$\begin{align*}
+& (\alpha_t...\alpha_1)^2+(\alpha_t...\alpha_2)^2\beta_1^2 + (\alpha_t...\alpha_3)^2\beta_2^2 + ... + \alpha_t^2\beta_{t-1}^2 + \beta_t^2\\
+&= \alpha_t^2 + \beta_t^2\\
+&= 1
+\end{align*}$
