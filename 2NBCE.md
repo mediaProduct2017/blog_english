@@ -9,7 +9,9 @@ $$Attention(Q, K, V) = [softmax(\frac{QK^T}{\sqrt{d_k}})]V$$
 
 Assume the length of a sentence is 10 (the sentence has 10 words) and the dimension of word embedding is 8, for the self attention of this sentence, Q is a matrix of $10 \times 8$, and so is K and V. Therefore, $\frac{QK^T}{\sqrt{d_k}}$ is a matrix of 10*10.
 
-For attention used in language model, attention masks are needed. We have padding mask and future (blinding) mask [5]. In language model and other sequence generation situations, in order to avoid information leak, we need future mask even for only one sentence (one sample of a batch). Future mask is usually used before softmax of the attention process, making some elements of the $\frac{QK^T}{\sqrt{d_k}}$ attention matrix not participate the calculation of softmax.
+For attention used in language model, attention masks are needed. We have padding mask and future (blinding) mask [5]. In language model and other sequence generation situations, in order to avoid information leak, we need future mask even for only one sentence (one sample of a batch). Future mask is usually used before softmax of the attention process, making some elements of the $\frac{QK^T}{\sqrt{d_k}}$ attention matrix not participate the calculation of softmax. When the element of future attention mask matrix is 1, the corresponding element in attention matrix will participate the calculation of softmax; when the element of future attention mask matrix is 0, the corresponding element in attention matrix will not participate the calculation of softmax.
+
+For attention used in language model, the attention matrix means the generation of the sentence for a single sentence sample (including start and end sign) in a batch. For the first row, it means the generation of the next token following the first token; for the second row, it means the generation of the next token following the second token; so on and so forth. For unidirectional attention, a token will only attend to itself and the left tokens. For bidirectional attention, a token can attend to tokens both left and right.
 
 
 References：
