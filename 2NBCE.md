@@ -27,6 +27,9 @@ References：
 
 [5] Attention中的Mask; query mask, key mask, future mask; Posted by ZhangWenXiang on July 27, 2019. Retrieved from https://demmon-tju.github.io/2019/07/27/attention-masks/
 
+[6] 苏剑林. (Jul. 16, 2019). 《“让Keras更酷一些！”：层中层与mask 》[Blog post]. Retrieved from https://kexue.fm/archives/6810
+
+[7] 苏剑林. (Sep. 18, 2019). 《从语言模型到Seq2Seq：Transformer如戏，全靠Mask 》[Blog post]. Retrieved from https://kexue.fm/archives/6933
 
 
 Understanding diffusion models (1): DDPM
