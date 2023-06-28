@@ -2,18 +2,32 @@ Theoretical understanding of NBCE
 
 NBCE, Naive Bayes-based Context Extension, is a method[1] proposed by Jianlin Su. The calculation and result of NBCE will lead to the similar models designed in other papers[2, 3], which were published by scientists in AI21 Labs and microsoft research.
 
-We will first introduce the PCW model in [2], which can be viewed as a specific case of NBCE. To understand PCW model, we first need to know basic knowledge of attention and transformer.
+We will first introduce the PCW model in [2], which can be viewed as a specific case of NBCE, with $\beta$=0 (The larger $\beta$ is, the more context it considers when answering questions; The smaller $\beta$ is, the more knowledge in the LLM it considers when answering questions). To understand PCW model, we first need to know basic knowledge of attention and transformer.
 
 In the attention paper[4], Scaled Dot-Product Attention is defined as:
 $$Attention(Q, K, V) = [softmax(\frac{QK^T}{\sqrt{d_k}})]V$$
 
+The results of attention are not logits. Assume the length of the sentence is L, and the hidden size of the model is d (which is usually the same as the dimension of word embedding), the results of attention have dimension of $L \times d$. For logits, the dimension is $L \times n$, where n is the number of classes when giving predictions, such as the number of words or tokens in language model. To get logits from attention results, we need another transformation:
+
+$$logits = Attention(Q, K, V)*W$$
+
+Where W is a matrix of $d \times n$. If we want probabilities, then
+
+$$ probabilities = softmax(logits) $$
+
+Where "probabilities" is a matrix of $L \times n$.
+
 Assume the length of a sentence is 10 (the sentence has 10 words) and the dimension of word embedding is 8, for the self attention of this sentence, Q is a matrix of $10 \times 8$, and so is K and V. Therefore, $\frac{QK^T}{\sqrt{d_k}}$ is a matrix of 10*10.
 
-For attention used in language model, attention masks are needed. We have padding mask and future (blinding) mask [5]. In language model and other sequence generation situations, in order to avoid information leak, we need future mask even for only one sentence (one sample of a batch). Future mask is usually used before softmax of the attention process, making some elements of the $\frac{QK^T}{\sqrt{d_k}}$ attention matrix not participate the calculation of softmax. When the element of future attention mask matrix is 1, the corresponding element in attention matrix will participate the calculation of softmax; when the element of future attention mask matrix is 0, the corresponding element in attention matrix will not participate the calculation of softmax.
+Therefore, if the length of the sentence is L, then we need a matrix calculation of $L \times L$. If L becomes larger, because of the existence of self attention (self attention in transformer), the increase of calculation is quadratic, not linear. Of course, for matrix calculation, it can be paralleled in GPU, not the quadratic complex in traditional algorithms.
 
-For attention used in language model, the attention matrix (future attention matrix) means the generation of the sentence for a single sentence sample (including start and end sign) in a batch. For the first row, it means the generation of the next token following the first token; for the second row, it means the generation of the next token following the second token; so on and so forth. For unidirectional attention, a token will only attend to itself and the left tokens. For bidirectional attention, a token can attend to tokens both left and right.
+For attention used in language model, attention masks are needed. We have padding mask and future (blinding) mask [5]. In language model and other sequence generation situations, in order to avoid information leak, we need future mask even for only one sentence (one sample of a batch). Future mask is usually used before softmax of the attention process, making some elements of the $\frac{QK^T}{\sqrt{d_k}}$ attention matrix not participate the calculation of softmax (For specific methods to do this, refer to [6]). When the element of future attention mask matrix is 1, the corresponding element in attention matrix will participate the calculation of softmax; when the element of future attention mask matrix is 0, the corresponding element in attention matrix will not participate the calculation of softmax.
 
-If we import a causal language model, when training and inferring, lower triangular matrix will automatically be used as the future attention matrix. We don't have to assign future attention matrix by hand. For padding mask, we need to assign it according to the sentence samples in a batch. The padding mask and future mask will be combined automatically by deep learning framework to produce final future mask before softmax of (self) attention manipulation.
+For attention used in language model, the attention matrix (future attention matrix) means the generation of the sentence for a single sentence sample (including start and end sign) in a batch. For the first row, it means the generation of the next token following the first token; for the second row, it means the generation of the next token following the second token; so on and so forth. For unidirectional attention, a token will only attend to itself and the left tokens. For bidirectional attention, a token can attend to tokens both left and right (such as the uniLM model in seq2seq. If we have question and want to predict answer, the token in question can attend to all the tokens in question, no matter the left tokens or the right tokens).
+
+If we import a causal language model (unidirectional attention), when training and inferring, lower triangular matrix will automatically be used as the future attention matrix. We don't have to assign future attention matrix by hand (It's automatic).
+
+For padding mask, we need to assign it according to the sentence samples in a batch. The padding mask and future mask will be combined automatically by deep learning framework to produce final future mask (final mask) before softmax of (self) attention manipulation.
 
 References：
 
