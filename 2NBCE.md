@@ -34,7 +34,10 @@ For padding mask, we need to assign it according to the sentence samples in a ba
 With padding, the final mask (with both future mask and padding mask) matrix will become larger. Assume the final mask is a matrix of $L \times L$, with padding, L will become larger because of the paddings and there will be more 0's in the mask matrix. If we have several samples in a batch, each sample will correspond to a mask matrix, and a batch will correspond to several mask matrix, that is, a tensor which has three dimensions, one dimension is for batch size, the other two dimensions is for mask matrix. Because the paddings for different sentences in a batch are different, the mask matrixes for different sentences are also different.
 
 In PCW figure in [1] or Figure 3 in [2], we can see that, assume each context has token length of L, then n contexts have a total token length of $n \times L$. Assume task tokens have token length of T. The total length of prompt is nL+T.
-If we don't use pcw or nbce, we need to input the prompt of length nL+T into LLM directly. Because of self attention in transformer, we will have a calculation amount of $(nL+T)^2$, which will be very large if n is large. That is, we need to conduct softmax calculation $(nL+T)^2$ times.
+
+If we don't use pcw or nbce, we need to input the prompt of length nL+T into LLM directly. Because of self attention in transformer, we will have a calculation amount of $(nL+T)^2$, which will be very large if n is large. That is, we need to conduct softmax calculation $(nL+T)^2$ times. L and T are constants, therefore, the computational complexity is proportional to $n^2$.
+
+If we use pcw or nbce, from PCW figure in [1] or Figure 3 in [2], we know that for each context, the computational complexity is less than $L^2$, which is small when L is small; For the calculation between task tokens and all the tokens, the computational complexity is $T*(nL+T)=nTL+T^2$, which is proportional to n. The total computational complexity is $nTL+T^2+L^2$. Therefore, even n is very large, there is not too much calculation as long as T and L are small.  
 
 
 References：
