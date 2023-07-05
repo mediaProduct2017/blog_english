@@ -2,7 +2,11 @@ Theoretical understanding of NBCE
 
 NBCE, Naive Bayes-based Context Extension, is a method[1] proposed by Jianlin Su. The calculation and result of NBCE will lead to the similar models designed in other papers[2, 3], which were published by scientists in AI21 Labs and microsoft research.
 
+1 __PCW Model__
+
 We will first introduce the PCW model in [2], which can be viewed as a specific case of NBCE, with $\beta$=0 (The larger $\beta$ is, the more context it considers when answering questions; The smaller $\beta$ is, the more knowledge in the LLM it considers when answering questions). To understand PCW model, we first need to know basic knowledge of attention and transformer.
+
+1.1 __Attention and transformer__
 
 In the attention paper[4], Scaled Dot-Product Attention (Or dot-product attention) is defined as:
 $$Attention(Q, K, V) = [softmax(\frac{QK^T}{\sqrt{d_k}})]V$$
@@ -17,7 +21,7 @@ Where W is a matrix of $d \times n$. If we want probabilities, then
 
 $$ probabilities = softmax(logits) $$
 
-Where "probabilities" is a matrix of $L \times n$.
+Where "probabilities" is a matrix of $L \times n$. During forward process, probabilities are what we want. During backward process, probabilities will be put in the log part in cross entropy.
 
 Assume the length of a sentence is 10 (the sentence has 10 words) and the dimension of word embedding is 8, for the self attention of this sentence, Q is a matrix of $10 \times 8$, and so is K and V. Therefore, $\frac{QK^T}{\sqrt{d_k}}$ is a matrix of 10*10.
 
@@ -31,13 +35,55 @@ If we import a causal language model (unidirectional attention), when training a
 
 For padding mask, we need to assign it according to the sentence samples in a batch. The padding mask and future mask will be combined automatically by deep learning framework to produce final future mask (final mask) before softmax of (self) attention manipulation.
 
-With padding, the final mask (with both future mask and padding mask) matrix will become larger. Assume the final mask is a matrix of $L \times L$, with padding, L will become larger because of the paddings and there will be more 0's in the mask matrix. If we have several samples in a batch, each sample will correspond to a mask matrix, and a batch will correspond to several mask matrix, that is, a tensor which has three dimensions, one dimension is for batch size, the other two dimensions is for mask matrix. Because the paddings for different sentences in a batch are different, the mask matrixes for different sentences are also different.
+With padding, the final mask (with both future mask and padding mask) matrix will become larger. Assume the final mask is a matrix of $L \times L$, with padding, L will become larger because of the paddings and there will be more 0's in the mask matrix. If we have several samples in a batch, each sample will correspond to a mask matrix, and a batch will correspond to several mask matrix, that is, a tensor which has three dimensions, one dimension is for batch size, the other two dimensions is for mask matrix. Because the paddings for different sentences in a batch are different, the mask matrixes for different sentences are also different, which are assembled to a three-dimensional tensor.
+
+1.2 __Computational complexity of PCW__
 
 In PCW figure in [1] or Figure 3 in [2], we can see that, assume each context has token length of L, then n contexts have a total token length of $n \times L$. Assume task tokens have token length of T. The total length of prompt is nL+T.
 
 If we don't use pcw or nbce, we need to input the prompt of length nL+T into LLM directly. Because of self attention in transformer, we will have a calculation amount of $(nL+T)^2$, which will be very large if n is large. That is, we need to conduct softmax calculation $(nL+T)^2$ times. L and T are constants, therefore, the computational complexity is proportional to $n^2$.
 
-If we use pcw or nbce, from PCW figure in [1] or Figure 3 in [2], we know that for each context, the computational complexity is less than $L^2$, which is small when L is small; For the calculation between task tokens and all the tokens, the computational complexity is $T*(nL+T)=nTL+T^2$, which is proportional to n. The total computational complexity is $nTL+T^2+L^2$. Therefore, even n is very large, there is not too much calculation as long as T and L are small.  
+If we use pcw or nbce, from PCW figure in [1] or Figure 3 in [2], we know that for each context, the computational complexity is less than $L^2$, which is small when L is small; For the calculation between task tokens and all the tokens, the computational complexity is $T*(nL+T)=nTL+T^2$, which is proportional to n. The total computational complexity is $nTL+T^2+nL^2$. Therefore, even n is very large, there is not too much calculation as long as T and L are small. Besides, for matrix calculation, the softmax calculation for each element of the matrix can be paralleled, reducing the time expense.  
+
+2 __NBCE theory__
+
+From the introduction above, we know that PCW model can extend the context length of LLM in an efficient way, which is linear to context numbers in computational complexity (time complexity and space complexity). PCW is a result, like a mathematical theorem, it may be right, but we have to prove it from previous theory.
+
+NBCE uses naive bayes theory to get the PCW model, which is a special case of nbce. That is , we can prove and derive PCW model according to naive bayes theory.
+
+Assume T is the token sequence to be generated (it is a sequence of many tokens), and $S_1, ..., S_n$ are different contexts. Assume the total length is larger than the training length of LLM (Assume we use absolute position during LLM training), and the length sum of single context and T is still within the training length. We want to generate T based on $S_1, ..., S_n$, that is, estimate $p(T|S_1, ..., S_n)$.
+
+In practice, if we want to predict the probability of a sequence, we compute the probabilities of next token in T based on the previous tokens in T and the contexts.
+
+Naive bayes is bayes plus independent assumption. According to bayes formula:
+
+$$p(T|S_1, ..., S_n) \propto p(S_1, ..., S_n|T)p(T)$$
+
+$\propto$ means proportional to. $p(S_1, ..., S_n)$ is a constant, which is equivalent to p(data). According to condition independent assumption:
+
+$$p(S_1, ..., S_n|T) = \prod_{k=1}^n p(S_k|T)$$
+
+Therefore:
+
+$$p(T|S_1, ..., S_n) \propto p(T)\prod_{k=1}^n p(S_k|T)$$
+
+And according to $p(S_k|T) \propto \frac{p(T|S_k)}{p(T)}$, we have
+
+$$p(T|S_1, ..., S_n) \propto \frac{1}{p^{n-1}(T)}\prod_{k=1}^n p(T|S_k)$$
+
+When we transform it to a log form, we get
+
+$$
+\log p(T|S_1, \cdots, S_n) = \sum_{k=1}^n \log p(T|S_k) - (n-1)\log p(T) + constant
+\tag{1}\label{eq:five}
+$$
+
+Here $p(T|S_k)$ and $p(T)$ can be computed by LLM directly, whatever the architecture of LLM is. $p(T|S_k)$ is the predicted probability based on a single context, while $p(T)$ is the predicted probability without any contexts.
+
+According to Equation ($\ref{eq:five}$), we know that the computational complexity is linear to n because the time for $p(T|S_k)$ and $p(T)$ can be viewed as constants, having nothing to do with the number n (If we assume the maximal length of contexts is L, then all the computational complexity for each $p(T|S_k)$ is smaller than $L^2$; To be more precise, L is the maximal length of context length plus task prompt length for all the contexts). This is consistent with the result of PCW model.
+
+Besides, computation of different contexts can be paralleled, putting in a batch as different samples.
+
 
 
 References：
@@ -70,7 +116,7 @@ x_t &=& \alpha_tx_{t-1} + \beta_t\varepsilon_t\\
 &=& (\alpha_t...\alpha_1)x_0 + (\alpha_t...\alpha_2)\beta_1\varepsilon_1 + (\alpha_t...\alpha_3)\beta_2\varepsilon_2 + ... + \alpha_t\beta_{t-1}\varepsilon_{t-1} + \beta_t\varepsilon_t  \tag{1}\label{eq1}
 \end{eqnarray}$
 
-We assume $\varepsilon_{all} = (\alpha_t...\alpha_2)\beta_1\varepsilon_1 + (\alpha_t...\alpha_3)\beta_2\varepsilon_2 + ... + \alpha_t\beta_{t-1}\varepsilon_{t-1} + \beta_t\varepsilon_t$. &nbsp; $\varepsilon_{all}$ is the sum of multiple independent normal variables, and therefore it also follows normal distribution, with the mean of 0, and the variance of $(\alpha_t...\alpha_2)^2\beta_1^2 + (\alpha_t...\alpha_3)^2\beta_2^2 + ... + \alpha_t^2\beta_{t-1}^2 + \beta_t^2$.
+We assume $\varepsilon_{all} = (\alpha_t...\alpha_2)\beta_1\varepsilon_1 + (\alpha_t...\alpha_3)\beta_2\varepsilon_2 + ... + \alpha_t\beta_{t-1}\varepsilon_{t-1} + \beta_t\varepsilon_t.$ &nbsp; $\varepsilon_{all}$ is the sum of multiple independent normal variables, and therefore it also follows normal distribution, with the mean of 0, and the variance of $(\alpha_t...\alpha_2)^2\beta_1^2 + (\alpha_t...\alpha_3)^2\beta_2^2 + ... + \alpha_t^2\beta_{t-1}^2 + \beta_t^2$.
 
 With the assumption of $\alpha_t^2 + \beta_t^2 = 1$, see equation ($\ref{eq1}$), the sum of square of coefficients $(\alpha_t...\alpha_1)^2+(\alpha_t...\alpha_2)^2\beta_1^2 + (\alpha_t...\alpha_3)^2\beta_2^2 + ... + \alpha_t^2\beta_{t-1}^2 + \beta_t^2$ needs to be calculated.
 
