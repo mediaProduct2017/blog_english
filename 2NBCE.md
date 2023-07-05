@@ -8,7 +8,7 @@ We will first introduce the PCW model in [2], which can be viewed as a specific 
 
 1.1 __Attention and transformer__
 
-In the attention paper[4], Scaled Dot-Product Attention (Or dot-product attention) is defined as:
+In the attention paper[4], Scaled Dot-Product Attention (Or dot-product attention, which is the base of Multi-Head Scaled-Dot Attention [8]) is defined as:
 $$Attention(Q, K, V) = [softmax(\frac{QK^T}{\sqrt{d_k}})]V$$
 
 The results of attention are not logits. Assume the length of the sentence is L, and the hidden size of the model is d (which is usually the same as the dimension of word embedding), the results of attention have dimension of $L \times d$. As we can see below, $\frac{QK^T}{\sqrt{d_k}}$ is a matrix of $L \times L$. For this matrix, the softmax of it means softmax for each row of the matrix, the result of the softmax is still a matrix of $L \times L$. V is a matrix of $L \times d$, therefore, the attention result is a matrix of $L \times d$.
@@ -101,6 +101,9 @@ References：
 [6] 苏剑林. (Jul. 16, 2019). 《“让Keras更酷一些！”：层中层与mask 》[Blog post]. Retrieved from https://kexue.fm/archives/6810
 
 [7] 苏剑林. (Sep. 18, 2019). 《从语言模型到Seq2Seq：Transformer如戏，全靠Mask 》[Blog post]. Retrieved from https://kexue.fm/archives/6933
+
+[8] 苏剑林. (Jan. 06, 2018). 《《Attention is All You Need》浅读（简介+代码） 》[Blog post]. Retrieved from https://kexue.fm/archives/4765
+
 
 
 Understanding diffusion models (1): DDPM
