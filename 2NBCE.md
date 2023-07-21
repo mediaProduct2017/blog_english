@@ -39,6 +39,8 @@ For padding mask, we need to assign it according to the sentence samples in a ba
 
 With padding, the final mask (with both future mask and padding mask) matrix will become larger. Assume the final mask is a matrix of $L \times L$, with padding, L will become larger because of the paddings and there will be more 0's in the mask matrix. If we have several samples in a batch, each sample will correspond to a mask matrix, and a batch will correspond to several mask matrix, that is, a tensor which has three dimensions, one dimension is for batch size, the other two dimensions is for mask matrix. Because the paddings for different sentences in a batch are different, the mask matrixes for different sentences are also different, which are assembled to a three-dimensional tensor.
 
+During decoding of transformer, there are random sampling process even for the greedy search decoding. Because of the random sampling process, there is a seed to be set. If the seed is not fixed, the decoding result may be different even if the input sequence is absolutely the same. If we want the decoding result to be reproducible, we must set a fixed seed.
+
 1.2 __Computational complexity of PCW__
 
 In PCW figure in [1] or Figure 3 in [2], we can see that, assume each context has token length of L, then n contexts have a total token length of $n \times L$. Assume task tokens have token length of T. The total length of prompt is nL+T.
