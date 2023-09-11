@@ -2,7 +2,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合临床,直肠癌术后,双肺转移瘤,较前2016-6-9变化不著 2.双侧胸膜略增厚,变化不著 4.甲状腺低密度灶,变化不著。双肺近胸膜下示多个结节灶及肿块,部分边缘分叶、毛糙,牵拉邻近胸膜,大者位于左肺下叶,长径约3.0CM(纵隔窗),内示小空泡影,增强呈不均质强化。双侧肺门及纵隔未见增大淋巴结。双侧胸膜略增厚。双侧胸腔未见积液征象。甲状腺右叶见低密度灶,边缘较清晰。\t",
-        "output": "The primary tumor site is {直肠}, the primary tumor size is {直肠}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {直肠}, the primary tumor size is {None}, the metastasis site is {双肺}",
         "id": "old1",
         "type": "extract",
         "primary": "yes",
@@ -15,7 +15,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺上叶可见一不规则软组织密度灶,约2.6CM×3.7CM,增强扫描呈明显不均匀强化,其边缘呈浅分叶,双肺野内散在多发结节灶,大者直径约0.6CM,纵隔内4R、7区示多发肿大淋巴结,大者短径约1.0CM。T6椎体右侧椎弓根及右侧第6后肋可见局限性骨质密度增高影。\t1.左肺上叶癌累及胸膜并双肺多发转移2.纵隔淋巴结肿大3.T6椎体右侧椎弓根及右侧第6后肋局限性骨质密度增高,请结合其他检查。",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {2.6CM×3.7CM}, the metastasis site is {双肺}",
         "id": "old19",
         "type": "extract",
         "primary": "yes",
@@ -28,7 +28,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左乳外侧见团块状影,边缘不清,内见弥漫细小多形性钙化,增强后呈较显著不均匀强化;同侧乳晕区皮肤略增厚,乳头凹陷。左侧腋窝见大者短径约0.6CM肿大淋巴结,强化较显著。双肺野清晰。扫描野内肝内见大者直径约0.6CM低密度结节,边缘清晰或欠清晰,未见强化。\t1.左乳癌并左侧腋窝淋巴结转移  2.肝内低密度灶,部分为囊肿,部分囊肿可能,建议观察。",
-        "output": "The primary tumor site is {左乳外侧}, the primary tumor size is {左乳外侧}, the metastasis site is {左侧腋窝淋巴结}",
+        "output": "The primary tumor site is {左乳外侧}, the primary tumor size is {None}, the metastasis site is {左侧腋窝淋巴结}",
         "id": "old42",
         "type": "extract",
         "primary": "yes",
@@ -41,7 +41,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合乳癌病史,左小脑半球转移瘤,及左枕骨转移灶; 2.双上颌窦炎。左侧小脑半球示一结节灶,截面约3.2CM×2.6CM,边缘较清,呈等T1等T2信号,T2-FLAIR呈等高混杂信号,增强扫描呈明显不均匀强化;病变周围示片状长T2水肿带;第四脑室受压右移,中线结构局部右移。左枕骨示斑片状等T1等T2信号,T2-FLAIR呈低信号,增强扫描呈明显不均匀强化。扫描野内双侧上颌窦内示液性信号影。\t",
-        "output": "The primary tumor site is {乳}, the primary tumor size is {乳}, the metastasis site is {左小脑半球,左枕骨}",
+        "output": "The primary tumor site is {乳}, the primary tumor size is {None}, the metastasis site is {左小脑半球,左枕骨}",
         "id": "old55",
         "type": "extract",
         "primary": "yes",
@@ -54,7 +54,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合右乳癌术后病史,左顶叶转移。2.右上颌窦囊肿。左侧顶叶见一类圆形异常信号影,表现为T1WI中心低、边缘略高信号,T2WI及压水序列为中心高、边缘等信号,DWI为中心低、边缘高信号,增强扫描呈较显著不均匀强化,大小约1.0CM×0.8CM,周围可见斑片状长T2信号影。余脑实质内增强扫描未见异常信号及强化征象。脑室、池、脑沟裂未见异常。中线结构居中,未见移位。右上颌窦可见一长T1长T2信号结节,边界清楚。\t",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {左顶叶}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {None}, the metastasis site is {左顶叶}",
         "id": "old59",
         "type": "extract",
         "primary": "yes",
@@ -67,7 +67,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合临床,直肠癌术后,双肺转移瘤,较前2016-03-15部分缩小,部分略饱满,部分变化不著 2.双侧胸膜略增厚,变化不著 4.甲状腺低密度灶,变化不著。双肺近胸膜下示多个结节灶及肿块,部分边缘分叶、毛糙,牵拉邻近胸膜,大者位于左肺下叶,长径约3.0CM(纵隔窗),内示小空泡影,增强呈不均质强化。双侧肺门及纵隔未见增大淋巴结。双侧胸膜略增厚。双侧胸腔未见积液征象。甲状腺右叶见低密度灶,边缘较清晰。\t",
-        "output": "The primary tumor site is {直肠}, the primary tumor size is {直肠}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {直肠}, the primary tumor size is {None}, the metastasis site is {双肺}",
         "id": "old66",
         "type": "extract",
         "primary": "yes",
@@ -80,7 +80,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合临床,右乳癌治疗后;多发骨转移2.双肺结节及类结节灶,建议密切观察  3.双肺气肿。右乳治疗后,腺体结构紊乱,皮肤局部增厚。余双乳腺体结构亦示紊乱。双侧腋窝见短径不足0.5CM小淋巴结。胸廓诸骨示较广泛性成骨性改变。双肺见结节及类结节灶,直径不足0.5CM。双肺见斑片状过度透光区。\t",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {骨}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {None}, the metastasis site is {骨}",
         "id": "old68",
         "type": "extract",
         "primary": "yes",
@@ -93,7 +93,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左乳术后,术区结构紊乱,未见结节及结节灶。左侧腋窝结构紊乱。右乳未见异常。左侧内乳见增大淋巴结,短径约0.8CM。左侧腋窝、双侧肺门及纵隔未见增大淋巴结。双肺野清晰,未见结节及异常强化灶。  肝实质内见多发低密度结节及肿块,大者直径约3.7CM。胆囊充盈可,壁不厚。胰脾、双侧肾上腺及双肾未见异常。腹腔及腹膜后未见明显肿大淋巴结。\t1.结合临床,左乳癌术后改变,左侧内乳淋巴结肿大2.肝转移,较前片2014-4-2进展。",
-        "output": "The primary tumor site is {左乳}, the primary tumor size is {左乳}, the metastasis site is {肝}",
+        "output": "The primary tumor site is {左乳}, the primary tumor size is {None}, the metastasis site is {肝}",
         "id": "old82",
         "type": "extract",
         "primary": "yes",
@@ -106,7 +106,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "双肺近胸膜下示多个结节灶及肿块,部分边缘分叶、毛糙,牵拉邻近胸膜,大者位于左肺下叶,长径约3.0CM(纵隔窗),内示小空泡影,增强呈不均质强化。双侧肺门及纵隔未见增大淋巴结。双侧胸膜略增厚。双侧胸腔未见积液征象。甲状腺右叶见低密度灶,边缘较清晰。\t1.结合临床,直肠癌术后,双肺转移瘤,较前变化不著 2.双侧胸膜略增厚,变化不著 4.甲状腺低密度灶,变化不著。",
-        "output": "The primary tumor site is {直肠}, the primary tumor size is {直肠}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {直肠}, the primary tumor size is {None}, the metastasis site is {双肺}",
         "id": "old83",
         "type": "extract",
         "primary": "yes",
@@ -119,7 +119,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.考虑右乳癌并右腋窝淋巴结转移,请结合其他检查。2.右肺类结节灶,建议观察;双肺纤维灶。右乳外下象限示长径约1.1CM不均质强化结节灶,边界欠清,向局部前达皮下。余双乳腺体强化欠均质,内示小斑片状强化灶。右侧腋窝示大者短径约1.9CM淋巴结,强化较著。左侧锁骨上示短径不足0.5CM淋巴结。左侧腋窝、纵隔及双肺门未见肿大淋巴结。右肺尖区示小类结节灶,余双肺内示索条影。\t",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {右腋窝淋巴结}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {1.1CM}, the metastasis site is {右腋窝淋巴结}",
         "id": "old87",
         "type": "extract",
         "primary": "yes",
@@ -132,7 +132,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶后段近胸膜处示软组织结节灶,形态不规则,截面约2.4CM�×2.2CM。双肺内示泡状过度透光区。纵隔内气管右旁、腔静脉后间隙、隆突下、右肺门示增大淋巴结,大者短径约1.4CM。右侧胸膜增厚呈结节及肿块状。右侧胸腔示液体密度影。\t1.结合临床,右肺癌,较前(2014-11-14)略似饱满;右肺门并纵隔淋巴结转移,较前部分进展,部分变化不著;右侧胸膜转移,较前部分好转,部分变化不著;右侧胸腔积液,较前略减少。",
-        "output": "The primary tumor site is {右肺上叶后段}, the primary tumor size is {右肺上叶后段}, the metastasis site is {纵隔淋巴结,右侧胸膜}",
+        "output": "The primary tumor site is {右肺上叶后段}, the primary tumor size is {2.4CM�×2.2CM}, the metastasis site is {纵隔淋巴结,右侧胸膜}",
         "id": "old107",
         "type": "extract",
         "primary": "yes",
@@ -145,7 +145,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合临床,右乳癌术后,肝转移2.胆囊炎。右乳术后,术区未见增厚及异常强化征象。右腋窝结构紊乱。左乳及左腋窝未见异常。纵隔内未见肿大淋巴结。双肺野清晰。 肝脏实质内可见数个低密度结节灶,大者直径约0.9CM,边缘模糊,轻度强化。胆囊充盈可,壁示增厚。胰、脾及扫描野内双肾未见异常。腹膜后未见肿大淋巴结。\t",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {肝}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {None}, the metastasis site is {肝}",
         "id": "old115",
         "type": "extract",
         "primary": "yes",
@@ -171,7 +171,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合乳癌病史,脑多发转移瘤。2.左上颌窦炎。脑干、双侧大脑及小脑半球见多发大小不等的结节样异常信号,表现为T1WI低、略低信号,T2WI略高、高信号,压水序列高信号,DWI序列低、高信号,增强扫描呈结节样、环形或不均匀强化,大者约1.6CM×2.1CM,部分病变周围脑白质见小片状或片状长T2信号水肿带,四脑室及双侧侧脑室略受压变形。中线结构居中。左上颌窦可见小片状长T2信号区。余未见异常。\t",
-        "output": "The primary tumor site is {乳}, the primary tumor size is {乳}, the metastasis site is {脑}",
+        "output": "The primary tumor site is {乳}, the primary tumor size is {None}, the metastasis site is {脑}",
         "id": "old120",
         "type": "extract",
         "primary": "yes",
@@ -184,7 +184,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右乳术后,术区未见增厚及异常强化征象。右腋窝结构紊乱。左乳及左腋窝未见异常。左肺下叶可见条索状密度增高影,余肺野清晰。纵隔内未见肿大淋巴结。双肺野清晰。  肝脏实质内可见多发低密度肿块,大者直径约2.7CM,边缘模糊,轻度强化。胆囊充盈可,壁示增厚。胰、脾及扫描野内双肾未见异常。腹膜后未见肿大淋巴结。\t1.结合临床,右乳癌术后,肝转移,较前2015-2-25进展2.左肺下叶纤维灶3.胆囊炎。",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {肝}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {None}, the metastasis site is {肝}",
         "id": "old123",
         "type": "extract",
         "primary": "yes",
@@ -197,7 +197,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合肺癌病史,左额叶、左顶叶转移。2.脑多发小缺血灶。左额叶近颅顶处可见一0.9CM×1.1CM×1.4CM的类卵圆形结节,有分叶,周围伴有斑片状长T2信号的水肿带,结节表现为T1加权像略低信号,T2加权像略高信号,压水像及DWI为高信号,不均匀强化。左顶叶可见一点状强化灶。双额叶可见散在小点状等T1略长T2信号影,压水像为高信号,无强化。脑室系统无扩大。中线结构居中。余未见异常。\t",
-        "output": "The primary tumor site is {肺}, the primary tumor size is {肺}, the metastasis site is {左额叶,左顶叶}",
+        "output": "The primary tumor site is {肺}, the primary tumor size is {None}, the metastasis site is {左额叶,左顶叶}",
         "id": "old168",
         "type": "extract",
         "primary": "yes",
@@ -210,7 +210,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "双乳呈脂肪型。左乳外上象限可见结节样密度增高影,大小约1.5CM×1.7CM影,其密度中等,边缘分叶,模糊,未见恶性钙化征象。同侧乳头无凹陷。皮肤无增厚。右乳未见异常。左侧腋窝见肿大淋巴结影,直径约2.0CM。右腋下示稍大淋巴结影,内可见脂肪密度影。\t1.\\T结合临床,左乳CA并作出腋窝淋巴结转移(BI-RADS 5)2.\\T右乳未见异常。",
-        "output": "The primary tumor site is {左乳}, the primary tumor size is {左乳}, the metastasis site is {腋窝淋巴结}",
+        "output": "The primary tumor site is {左乳}, the primary tumor size is {1.5CM×1.7CM}, the metastasis site is {腋窝淋巴结}",
         "id": "old174",
         "type": "extract",
         "primary": "yes",
@@ -223,7 +223,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合临床,左肺癌并阻塞性肺不张及炎症2.左肺门、纵隔淋巴结转移,右肺门淋巴结肿大,不除外转移3.左侧第4肋陈旧性骨折。左肺下叶示软组织肿块影,部分支气管狭窄,远端见少许实变肺组织及斑片状密度增高影,增强扫描病变呈较明显强化,直径约2.8CM。余肺野清。纵隔内气管周围、腔静脉后气管前间隙、主肺动脉窗区、隆突下、双肺门示多发增大淋巴结,大者短径约3.5CM。左侧第4肋示陈旧性骨折线形成。\t",
-        "output": "The primary tumor site is {左肺下叶}, the primary tumor size is {左肺下叶}, the metastasis site is {左肺门、纵隔淋巴结,右肺门淋巴结}",
+        "output": "The primary tumor site is {左肺下叶}, the primary tumor size is {2.8CM}, the metastasis site is {左肺门、纵隔淋巴结,右肺门淋巴结}",
         "id": "old179",
         "type": "extract",
         "primary": "yes",
@@ -236,7 +236,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺癌术后,左侧胸膜及淋巴结转移,少量胸腔积液。会诊*********CT(2016-09-12)  左肺下叶术后缺如,左肺门见高密度吻合器影,残余左肺见索条影,左侧胸膜见多发结节灶,较大者位于下舌段近纵隔处,大小约2.5CM×1.5CM,呈均匀强化;左侧膈淋巴结肿大。左侧胸膜腔内见少量液性密度影,呈包裹性改变。右肺上叶后段胸膜下小结节灶,大小约0.4CM×0.3CM。\t",
-        "output": "The primary tumor site is {左肺下叶}, the primary tumor size is {左肺下叶}, the metastasis site is {左侧胸膜,淋巴结}",
+        "output": "The primary tumor site is {左肺下叶}, the primary tumor size is {None}, the metastasis site is {左侧胸膜,淋巴结}",
         "id": "old183",
         "type": "extract",
         "primary": "yes",
@@ -249,7 +249,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右侧小脑半球、右侧颞叶、顶叶及左额叶、顶叶、颞叶见多发结节样异常信号影,表现为T1WI低信号,T2WI及压水序列高信号,DWI序列呈等、高信号,增强扫描呈结节样或环形强化,大着直径约1.6CM位于左顶叶,部分病灶周围脑实质内见长T2水肿带。脑室、脑池未见扩张,中线结构居中。余未见异常。\t结合右肺癌病史,符合脑多发转移瘤MR表现。",
-        "output": "The primary tumor site is {右肺}, the primary tumor size is {右肺}, the metastasis site is {右侧小脑半球,右侧颞叶,顶叶,左额叶,顶叶,颞叶,脑}",
+        "output": "The primary tumor site is {右肺}, the primary tumor size is {None}, the metastasis site is {右侧小脑半球,右侧颞叶,顶叶,左额叶,顶叶,颞叶,脑}",
         "id": "old191",
         "type": "extract",
         "primary": "yes",
@@ -262,7 +262,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "会诊*******(2016-7-21)  右肺尖段示不规则结节灶,边界清晰,大小约为1.0CM×0.9CM,增强扫描呈中度强化。右肺门及纵隔多发淋巴结肿大,部分融合成团,大者短径约为4.5CM,包绕挤压邻近组织。  肝脏大小形态可,肝左叶示低密度影,边界清晰,增强扫描未见强化。胆囊不大,壁略厚。胰腺、双肾、双侧肾上腺及脾未见异常。腹腔及腹膜后未见肿大淋巴结。\t1.考虑右肺上叶癌并纵隔及右肺门淋巴结转移;2.肝囊肿、胆囊炎。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {纵隔及右肺门淋巴结}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {1.0CM×0.9CM}, the metastasis site is {纵隔及右肺门淋巴结}",
         "id": "old214",
         "type": "extract",
         "primary": "yes",
@@ -275,7 +275,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右乳术后,腋窝、双侧内乳区、双肺门及纵隔未见明确肿大淋巴结。右肺下叶、左肺下叶见两个类磨玻璃密度影,边界尚清,大者直径约0.4CM。左侧叶间胸膜见一类结节灶,直径约0.3CM。扫描野内胆囊内见一小结节灶,直径约0.3CM。扫描野内骨质未见明显破坏。\t1.结合临床,右乳癌并右侧腋窝淋巴结转移术后状态。  2.双肺类磨玻璃密度灶,较前变化不著  3.左侧叶间胸膜类结节灶,变化不著  4.胆囊内结节灶,考虑息肉可能性大,较前变化不著。",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {右侧腋窝淋巴结}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {None}, the metastasis site is {右侧腋窝淋巴结}",
         "id": "old219",
         "type": "extract",
         "primary": "yes",
@@ -288,7 +288,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶可见软组织密度肿块影,大小约3.3CM×4.7CM,分叶状,边缘毛糙,增强后呈明显强化。右肺内(图5-19、46、49)可见结节灶,大者直径约0.3CM。纵隔内未见肿大淋巴结。 肝脏实质内可见囊性密度灶,大者直径约0.5CM。胆、胰、脾及双肾未见异常。腹膜后未见肿大淋巴结。\t1.右肺癌并右肺转移2.肝囊肿。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {右肺}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {3.3CM×4.7CM}, the metastasis site is {右肺}",
         "id": "old221",
         "type": "extract",
         "primary": "yes",
@@ -301,7 +301,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左乳呈少量腺体型。其外上象限不规则肿块影,大小约4.0M×4.5CM,其密度增高、不均匀,边缘毛糙、不整。乳头无凹陷,皮肤无增厚。腋窝可见一直径约1.2CM肿大淋巴结影。\t左乳癌并同侧腋窝淋巴结转移。",
-        "output": "The primary tumor site is {左乳}, the primary tumor size is {左乳}, the metastasis site is {同侧腋窝淋巴结}",
+        "output": "The primary tumor site is {左乳}, the primary tumor size is {4.0M×4.5CM}, the metastasis site is {同侧腋窝淋巴结}",
         "id": "old280",
         "type": "extract",
         "primary": "yes",
@@ -314,7 +314,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.左肺上叶癌,左侧胸膜转移,左肺门、纵隔淋巴结转移,较前(2016-9-28)均好转;骨转移,较前变化不著2.左侧胸腔积液,较前减少。左肺上叶示一不规则软组织密度灶,大小约1.3CM×1.7CM,边缘分叶,可见强化。左侧胸膜及叶间胸膜示多发结节灶,可见强化。左侧胸腔示液体密度影。左肺门、纵隔内示数个肿大淋巴结,大者短径约0.6CM。左侧第七后肋呈溶骨性骨质破坏,局部形成软组织密度肿块。\t",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {左侧胸膜,左肺门、纵隔淋巴结,骨}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {1.3CM×1.7CM}, the metastasis site is {左侧胸膜,左肺门、纵隔淋巴结,骨}",
         "id": "old284",
         "type": "extract",
         "primary": "yes",
@@ -327,7 +327,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "脑干、双侧大脑及小脑半球见多发大小不等的结节样异常信号,表现为T1WI低、略低信号,T2WI略高、高信号,压水序列高信号,DWI序列低、高信号,增强扫描呈结节样、环形或不均匀强化,大者约1.3CM×2.1CM,部分病变周围脑白质见小片状或片状长T2信号水肿带,四脑室及双侧侧脑室略受压变形。中线结构居中。左上颌窦可见小片状长T2信号区。余未见异常。\t1.结合乳癌病史,脑多发转移瘤,较本院(2015-11-04)MR片略示好转。2.左上颌窦炎。",
-        "output": "The primary tumor site is {乳}, the primary tumor size is {乳}, the metastasis site is {脑干、双侧大脑及小脑半球,脑}",
+        "output": "The primary tumor site is {乳}, the primary tumor size is {None}, the metastasis site is {脑干、双侧大脑及小脑半球,脑}",
         "id": "old296",
         "type": "extract",
         "primary": "yes",
@@ -340,7 +340,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺门增大,见肿块影,大小约为4.0×4.2CM,CT值约29HU,左肺支气管受压变窄,增强扫描三期CT值约49HU、63HU、65HU。左肺下叶见斑片灶。胸膜未见增厚改变。两胸腔无积液征象。纵隔淋巴结增大,大者短径约2.9CM。右锁骨上淋巴结增大,大者短径约1.9CM。左肺动脉局部显示不清。左室心肌增厚。考虑左肺中央型肺癌伴纵隔及右锁骨上淋巴结转移,左肺动脉受累,左肺下叶阻塞性肺炎或肺不张。",
-        "output": "The primary tumor site is {左肺门}, the primary tumor size is {左肺门}, the metastasis site is {纵隔淋巴结,右锁骨上淋巴结}",
+        "output": "The primary tumor site is {左肺门}, the primary tumor size is {4.0×4.2CM}, the metastasis site is {纵隔淋巴结,右锁骨上淋巴结}",
         "id": "old302",
         "type": "extract",
         "primary": "yes",
@@ -353,7 +353,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶周围型肺癌,双肺及纵隔淋巴结多发转移。右肺下叶后基底段团块影,大小约4.02×5.92CM,CT值约38HU,远端支气管截断;双肺多发粟粒影、结节影;双肺纹理增强,双侧支气管未见确切狭窄征象。两肺门大小、形态未见明显异常。纵隔及右侧锁骨上多发肿大淋巴结,大小约3.92CM,心脏、血管未见异常。双侧胸膜未见增厚,未见双侧胸腔积液征象。",
-        "output": "The primary tumor site is {右肺下叶后基底段}, the primary tumor size is {右肺下叶后基底段}, the metastasis site is {双肺,纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺下叶后基底段}, the primary tumor size is {4.02×5.92CM}, the metastasis site is {双肺,纵隔淋巴结}",
         "id": "old304",
         "type": "extract",
         "primary": "yes",
@@ -366,7 +366,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.考虑左肺上叶中心型肺癌(较2013.2.20CT对比明显增大)并阻塞性肺不张,纵膈内多发淋巴结转移;2.心包积液较前新增;3.双侧胸腔积液,较前新增。左肺门区见团块状软组织密度影,最大截面约为7.73×7.39CM,CT值约45HU,左肺上叶上舌段支气管变窄,前段、尖后段、下舌段支气管均未见显示。右肺门未见明显异常。纵隔见多个肿大淋巴结影。心包可见大量积液。双侧胸腔可见弧形影。",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {纵膈内多发淋巴结}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {7.73×7.39CM}, the metastasis site is {纵膈内多发淋巴结}",
         "id": "old323",
         "type": "extract",
         "primary": "yes",
@@ -379,7 +379,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "双肺多发粟粒灶及小结节,右肺下叶可见高密度团块影,呈分叶状,右肺下叶部分支气管闭塞,其内密度均匀,大小约为6.5CM×7.1CM,平扫CT值约为42HU。两肺门区未见异常。所示肺内血管支气管束影稍增多。纵隔内见多发小淋巴结影。右侧胸腔积液征象。部分大血管管壁及冠脉走行区可见致密影。    所示左肾上腺结合部可见软组织小结节影。1、右肺下叶肺癌,建议能谱增强详查;2、双肺多发小结节及粟粒灶,转移可能性大;3、右侧胸腔积液;4、所示左肾上腺结合部软组织小结节影,随诊。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {6.5CM×7.1CM}, the metastasis site is {双肺}",
         "id": "old324",
         "type": "extract",
         "primary": "yes",
@@ -392,7 +392,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶后基底段见一高密度团块影,大小约2.3*3.0CM,CT值约24HU,呈分叶状改变,与邻近胸膜关系紧密。双肺散在多发小结节状稍高密度影。两肺门区未见异常。纵隔内见多发小淋巴结。心脏大血管未见异常。第11胸椎椎体可见类圆形低密度影,骨质破坏。所示肝内低密度病变。与2014-04-22胸部CT比较:1.右肺下叶周围型肺癌,双肺转移瘤,较前片缩小;胸椎转移,未见明显变化;2.右侧胸腔积液,较前减少;3.所示肝内低密度病变,较前新发,详查。",
-        "output": "The primary tumor site is {右肺下叶后基底段}, the primary tumor size is {右肺下叶后基底段}, the metastasis site is {双肺,第11胸椎}",
+        "output": "The primary tumor site is {右肺下叶后基底段}, the primary tumor size is {2.3*3.0CM}, the metastasis site is {双肺,第11胸椎}",
         "id": "old330",
         "type": "extract",
         "primary": "yes",
@@ -405,7 +405,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右肺上叶肿块,首先考虑肺癌并右肺转移,纵隔淋巴结转移,请结合临床,详查;2.右侧大量胸腔积液,右肺下叶膨胀不全;3.一胸椎高密度灶,随诊。右肺上叶见肿块影,径约2.07CM,CT值约50HU,呈分叶状,边缘毛糙;右肺可见多发类圆形结节影,大者径约0.55CM;右侧胸腔可见弧形液性密度影,右肺下叶膨胀不全;纵隔内可见肿大淋巴结影,大者短径约1.05CM。心脏大血管未见异常。一胸椎见结节样高密度影。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {右肺,纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {2.07CM}, the metastasis site is {右肺,纵隔淋巴结}",
         "id": "old347",
         "type": "extract",
         "primary": "yes",
@@ -418,7 +418,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶后段周围型肺癌,纵隔淋巴结转移。右肺上叶后段可见团块影,截面约2.50CM×2.12CM,CT值约32HU,增强有强化,三期CT值约53HU、68HU、47HU;病灶位于右肺门上区,腔静脉后及气管前可见团块影,截面约3.15CM×1.82CM,CT值约44HU。各大血管边界清晰。主动脉,肺动脉主干及其左右分支内造影剂密度均匀。",
-        "output": "The primary tumor site is {右肺上叶后段,右肺门上区}, the primary tumor size is {右肺上叶后段,右肺门上区}, the metastasis site is {纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺上叶后段,右肺门上区}, the primary tumor size is {2.50CM×2.12CM,3.15CM×1.82CM}, the metastasis site is {纵隔淋巴结}",
         "id": "old352",
         "type": "extract",
         "primary": "yes",
@@ -431,7 +431,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺癌并左肺多发、左胸膜、叶间裂及心包转移,较2011-02-21片进展,请结合临床。左下肺见不规则形软组织密度影,部分病灶相互融合,最大截面约7.30×5.50CM,CT值约49HU,左肺下叶支气管变窄,远端截断,左肺内可见多发大小不等类圆形高密度影;纵隔内可见稍增大的淋巴结影;左侧胸膜及叶间裂明显增厚,可见条形及结节样软组织密度影,左侧心隔角区可见多发结节影。",
-        "output": "The primary tumor site is {左下肺}, the primary tumor size is {左下肺}, the metastasis site is {左肺,左胸膜,叶间裂,心包}",
+        "output": "The primary tumor site is {左下肺}, the primary tumor size is {7.30×5.50CM}, the metastasis site is {左肺,左胸膜,叶间裂,心包}",
         "id": "old360",
         "type": "extract",
         "primary": "yes",
@@ -444,7 +444,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "结合病史,右乳癌累及右侧乳头、右腋窝淋巴结转移治疗后,较前(2014-06-19)MR片示好转。右乳头后方见一不规则异常信号影,边缘分叶、毛糙,局部累及右乳头致其凹陷,邻近皮肤略示增厚,表现为T1WI低信号,T2WI高信号,T2压脂序列高信号,DWI呈高信号,增强扫描可见显著强化,大小约1.5CM×1.7CM×2.0CM,时间-信号强度曲线为平台型。左乳增强前后未见异常。所扫双侧腋窝未见明显肿大淋巴结。余未见异常。",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {右侧乳头,右腋窝淋巴结}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {1.5CM×1.7CM×2.0CM}, the metastasis site is {右侧乳头,右腋窝淋巴结}",
         "id": "old362",
         "type": "extract",
         "primary": "yes",
@@ -457,7 +457,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,长径约为1.6CM*1.5CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。1.考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-01-05)右肺下叶肿块影略小,余较前片相仿。2.心包积液;3.甲状腺大;请结合临床。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {双肺,右胸膜}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {1.6CM*1.5CM}, the metastasis site is {双肺,右胸膜}",
         "id": "old364",
         "type": "extract",
         "primary": "yes",
@@ -470,7 +470,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左上中央型肺癌,纵隔及左肺门淋巴结转移不除外,较2015-11-17CT病变稍增大,请结合临床。左上肺门处可见肿块影,分叶状,大小为4.4×2.8CM,形状不规则,边缘清,与肺动脉分界不清,CT值为34HU,增强扫描三期CT值分别为73、61、63HU,均匀中度强化,包绕左肺动脉,左肺上叶舌段支气管稍狭窄,纵隔及左肺门可见多发肿大淋巴结,大者短径为1.2CM。两胸腔无积液征象。心脏大血管未见异常。",
-        "output": "The primary tumor site is {左上肺门}, the primary tumor size is {左上肺门}, the metastasis site is {左肺门淋巴结}",
+        "output": "The primary tumor site is {左上肺门}, the primary tumor size is {4.4×2.8CM}, the metastasis site is {左肺门淋巴结}",
         "id": "old370",
         "type": "extract",
         "primary": "yes",
@@ -483,7 +483,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右下肺门区可见一直径4.1CM大小的肿块,密度均匀,CT值为15HU,增强后约46、40HU;下叶支气管管腔消失,其周围结构被肿块侵犯。右肺下叶可见斑片影,边界模糊不清。隆突下淋巴结明显增大,短径约2.3。双侧胸腔未见积液征象。1.右下肺中央型肺癌合并阻塞性炎症,纵膈淋巴结转移;2.肺气肿。",
-        "output": "The primary tumor site is {右下肺}, the primary tumor size is {右下肺}, the metastasis site is {纵膈淋巴结}",
+        "output": "The primary tumor site is {右下肺}, the primary tumor size is {4.1CM}, the metastasis site is {纵膈淋巴结}",
         "id": "old377",
         "type": "extract",
         "primary": "yes",
@@ -496,7 +496,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶可见软组织密度肿块影,大小约为5.1*4.0CM,CT值约为10-36HU;双肺可见多个小结节影与粟粒影;右肺上叶可见致密钙化灶;右胸腔积液征象;心脏大血管未见异常。左侧肩胛骨可见骨质破坏,双侧多个肋骨、胸椎密度不均匀。1.右肺下叶恶性肿物,双肺多个小结节与粟粒灶,右侧胸腔少量积液;2.左侧肩胛骨骨质破坏,双侧多个肋骨、胸椎密度不均匀,均为骨转移改变;3.右肺上叶钙化灶。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {左侧肩胛骨,双侧多个肋骨,胸椎}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {5.1*4.0CM}, the metastasis site is {左侧肩胛骨,双侧多个肋骨,胸椎}",
         "id": "old378",
         "type": "extract",
         "primary": "yes",
@@ -509,7 +509,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左上肺门处可见肿块影,分叶状,大小为3.18×3.19CM,形状不规则,边缘清,与肺动脉分界不清,CT值为42HU,增强扫描三期CT值分别为62、66、66HU,均匀轻度强化,包绕左肺动脉,左肺上动脉未见显示,纵隔及左肺门可见多发肿大淋巴结,大者短径为0.93CM。左侧胸膜牵拉凹陷。两胸腔无积液征象。心脏大血管未见异常。左上肺门中央型肺癌,阻塞左上肺动脉,纵隔及左肺门淋巴结转移不除外,较2015-09-29CT左上肺门旁病变略减小,余较前相仿。",
-        "output": "The primary tumor site is {左上肺门}, the primary tumor size is {左上肺门}, the metastasis site is {纵隔及左肺门淋巴结}",
+        "output": "The primary tumor site is {左上肺门}, the primary tumor size is {3.18×3.19CM}, the metastasis site is {纵隔及左肺门淋巴结}",
         "id": "old395",
         "type": "extract",
         "primary": "yes",
@@ -522,7 +522,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶周围型肺癌,双肺多发转移瘤,纵隔淋巴结转移,双侧胸腔积液、心包积液,胸椎骨质破坏,较前(2015.7.15)进展。右肺上叶纵隔旁见椭圆形肿块影,大小约5.1*2.7CM,CT值19HU;两肺多发大小不等的结节影,大者直径约2.8CM。右肺上叶后段支气管截断。两肺门影增大。纵隔内多发增大的淋巴结,大者短径约2.0CM,其内见钙化灶。两胸腔见积液征象,右侧为著。冠脉钙化。心包积液。上胸椎骨质破坏,周围见软组织肿块影。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {双肺,纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {5.1*2.7CM}, the metastasis site is {双肺,纵隔淋巴结}",
         "id": "old412",
         "type": "extract",
         "primary": "yes",
@@ -535,7 +535,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶周围型肺癌,双肺多发转移瘤,纵隔淋巴结转移。右肺上叶纵隔旁可见椭圆形肿块影,大小约5.0*1.5CM,CT值42HU;两肺多发大小不等的结节影,大者直径约2.2CM。两肺支气管血管束略增粗。两肺门区未见异常。所示气管支气管影正常。纵隔内多发增大的淋巴结,大者直径约2.2CM,其内可见钙化灶。两胸腔无积液征象。冠脉钙化。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {双肺,纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {5.0*1.5CM}, the metastasis site is {双肺,纵隔淋巴结}",
         "id": "old417",
         "type": "extract",
         "primary": "yes",
@@ -548,7 +548,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺上叶中央型肺癌,阻塞左上肺动脉,纵隔及左肺门淋巴结转移。左上肺门处可见肿块影,分叶状,大小为5.4*5.3CM,形状不规则,边缘清,与肺动脉分界不清,CT值为42HU,增强扫描三期CT值分别为49、47、54HU,均匀轻度强化,包绕左肺动脉,左肺上动脉未见显示,纵隔及左肺门可见多发肿大淋巴结,大者短径为2.0CM。左侧胸膜牵拉凹陷。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {左肺门淋巴结}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {5.4*5.3CM}, the metastasis site is {左肺门淋巴结}",
         "id": "old421",
         "type": "extract",
         "primary": "yes",
@@ -561,7 +561,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶周围型肺癌,右肺多发转移瘤,纵隔多发淋巴结转移,右侧胸膜转移及右侧胸腔积液征象,对比2016.01.20CT相仿,请结合临床。右肺下叶见团块影,长径约为3.47CM,CT值约为36HU,增强后CT值约为67HU、60HU及61HU;右肺另见多发大小不等界清结节影。左肺小结节(30),纵隔内见数个增大的淋巴结,大者短径约为1.9CM。心脏大血管形态自然。右侧胸腔内见弧形积液征象,增强后右胸膜见多个结节状强化。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {右侧胸膜}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {3.47CM}, the metastasis site is {右侧胸膜}",
         "id": "old424",
         "type": "extract",
         "primary": "yes",
@@ -574,7 +574,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右肺下叶中央型肺癌可能性大;2.双肺小结节,不除外转移,随诊;3.纵隔小淋巴结,左肺上叶条索灶。右肺下叶(HR 88)见肿块影,界清,大小3.8CM*3.9CM,可见浅分叶及短毛刺,平扫CT值53HU,增强三期:62HU、65HU、72HU。右肺上叶(HR 84)、中叶(88、90)、左肺上叶舌段(102)见结节影,径约0.8CM。左肺上叶见条索影。两肺纹理清晰。两肺门区未见异常。所示气管支气管影通畅。纵隔内见多发小淋巴结,短径1.1CM。两胸腔未见积液征象。心脏大血管未见异常。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {3.8CM*3.9CM}, the metastasis site is {双肺}",
         "id": "old426",
         "type": "extract",
         "primary": "yes",
@@ -587,7 +587,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺上叶舌段及下叶基底段可见不规则团块影,大者约1.73*2.53CM,CT值约35HU,周围可见血管集束征及毛刺征。双肺可见多发结节影,大者径约0.63CM。两肺支气管血管束清晰。两肺门稍饱满。所示气管支气管影通畅。两胸腔未见积液征象。冠脉可见致密影。1.左肺不规则团块影,考虑周围型肺癌;2.双肺多发结节影,转移不除外,请结合临床。",
-        "output": "The primary tumor site is {左肺上叶舌段及下叶基底段}, the primary tumor size is {左肺上叶舌段及下叶基底段}, the metastasis site is {双肺多发结节}",
+        "output": "The primary tumor site is {左肺上叶舌段及下叶基底段}, the primary tumor size is {1.73*2.53CM}, the metastasis site is {双肺多发结节}",
         "id": "old431",
         "type": "extract",
         "primary": "yes",
@@ -600,7 +600,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右乳癌并右侧腋窝淋巴结转移2.双肺类结节灶,考虑转移可能性大3.纵隔淋巴结肿大右乳内上象限可见较大不规则软组织密度肿块及小结节灶,大者截面大小约2.8CM×2.2CM,边缘较模糊,与周围腺体分界欠清,增强后呈较显著强化。右侧腋窝可见肿大淋巴结,大者短径约1.3CM。左乳及左侧腋窝未见明显肿大淋巴结。双侧肺野内可见散在小结节灶,边界较模糊,大者直径约0.3CM。纵隔内主动脉弓旁可见肿大淋巴结,大者短径约1.1CM。",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {右侧腋窝淋巴结,双肺}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {2.8CM×2.2CM}, the metastasis site is {右侧腋窝淋巴结,双肺}",
         "id": "old435",
         "type": "extract",
         "primary": "yes",
@@ -626,7 +626,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "两肺野未见异常密度影。两肺门区未见异常。所示气管支气管影正常。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。左侧乳房内可见软组织团块,直径约2.7CM,CT值约41HU,胸大肌完好;增强扫描,CT值约54、81、88HU。左侧腋窝淋巴结明显增大,最大直径约2.4CM,增强扫描不均匀强化,可见内部不规则略低密度区。1、左侧乳腺癌征象,并左侧腋窝淋巴结转移;2、心肺CT平扫未见异常。",
-        "output": "The primary tumor site is {左侧乳腺}, the primary tumor size is {左侧乳腺}, the metastasis site is {左侧腋窝淋巴结}",
+        "output": "The primary tumor site is {左侧乳腺}, the primary tumor size is {2.7CM}, the metastasis site is {左侧腋窝淋巴结}",
         "id": "old447",
         "type": "extract",
         "primary": "yes",
@@ -639,7 +639,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右肺上叶前段中心型肺癌并阻塞性炎症,请结合纤维支气管镜检查;2.右肺下叶背段小结节,转移瘤不除外,随诊。右肺上叶前段见不规则团块影,可见分叶征及血管集束征,肿块大小约为2.20×1.87CM,CT值约为28HU,增强后三期CT值约为94、87、68HU。周围见片状模糊影。右肺下叶背段见小结节影,两肺门区未见异常。所示气管支气管影正常。纵隔内未见增大的淋巴结。两胸腔无积液征象。主动脉及冠状动脉管壁见钙化影。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {右肺下叶背段}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {2.20×1.87CM}, the metastasis site is {右肺下叶背段}",
         "id": "old452",
         "type": "extract",
         "primary": "yes",
@@ -652,7 +652,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右侧乳腺癌,右侧腋窝淋巴结转移;2.左肺上叶索条灶。右侧乳腺外侧象限内可见一软组织密度影,大小为1.92×1.85CM,CT值为42HU,增强后两期CT值为79HU、72HU。右侧腋窝内可见一肿大淋巴结影,大小为4.27×3.1CM。  左肺上叶舌段可见索条灶。两肺纹理清晰。两肺门区未见异常。所示气管支气管影正常。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。",
-        "output": "The primary tumor site is {右侧乳腺}, the primary tumor size is {右侧乳腺}, the metastasis site is {右侧腋窝淋巴结}",
+        "output": "The primary tumor site is {右侧乳腺}, the primary tumor size is {1.92×1.85CM}, the metastasis site is {右侧腋窝淋巴结}",
         "id": "old464",
         "type": "extract",
         "primary": "yes",
@@ -665,7 +665,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺门区可见片状软组织密度影,范围约为4.89*3.35CM,CT值约为36HU,边界不清;右肺中叶、右肺下叶部分支气管狭窄,远端闭塞;两肺内可见大片状高密度影,边缘模糊,右肺为著;双侧胸腔内可见弧形液性密度影;纵隔内可见肿大淋巴结影,径约2.67CM;主动脉、双侧冠状动脉走行区内可见条状高密度钙化影。1.右肺门肿块,考虑中央型肺癌并阻塞性炎症;2.两肺间质性炎症;3.双侧胸腔积液;4.纵隔淋巴结肿大,转移不除外。",
-        "output": "The primary tumor site is {右肺门}, the primary tumor size is {右肺门}, the metastasis site is {纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺门}, the primary tumor size is {4.89*3.35CM}, the metastasis site is {纵隔淋巴结}",
         "id": "old472",
         "type": "extract",
         "primary": "yes",
@@ -678,7 +678,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺上叶见肿块影,大小约为7.08*2.34CM,CT值约53HU。右肺上叶见一径约0.5CM结节。两肺门区未见异常。所示气管支气管影正常。左主动脉弓旁、纵隔及右肺门淋巴结增大,大者短径约3.7CM。内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。1.左肺癌伴左主动脉弓旁、纵隔及右肺门淋巴结转移;2.右肺小结节,随诊;3.左侧肾上腺增粗,建议详查。",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {右肺门淋巴结}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {7.08*2.34CM}, the metastasis site is {右肺门淋巴结}",
         "id": "old483",
         "type": "extract",
         "primary": "yes",
@@ -691,7 +691,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "结合临床,左乳癌术后,肝内低密度灶,转移可能性大,请结合前片左乳术后,术区未见增厚及异常强化征象。左腋窝结构紊乱。右乳及右腋窝未见异常。纵隔内未见肿大淋巴结。双肺野清晰。扫描野肝实质内可见低密度结节灶,大小约1.7CM×2.3CM,边缘欠清,轻度强化。",
-        "output": "The primary tumor site is {左乳}, the primary tumor size is {左乳}, the metastasis site is {肝}",
+        "output": "The primary tumor site is {左乳}, the primary tumor size is {None}, the metastasis site is {肝}",
         "id": "old492",
         "type": "extract",
         "primary": "yes",
@@ -704,7 +704,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右肺下叶周围型肺癌,右肺门及纵隔淋巴结大,考虑转移可能性大,随诊;2.右肺上叶及左肺下叶炎症;3.一上位胸椎结节高密度影,随诊除外转移。双肺纹理增强,右肺上叶及左肺下叶可见斑片模糊影,右肺下叶可见团块影,分叶状,大小约3.5CM×4.9CM,CT值约31HU,增强后明显强化,各期CT值依次为41HU、37HU、32HU。右肺门及纵隔内可见肿大淋巴结,心影不大。双侧胸腔内未见明显积液征象。一上位胸椎可见结节高密度影。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {右肺门及纵隔淋巴结,上位胸椎}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {3.5CM×4.9CM}, the metastasis site is {右肺门及纵隔淋巴结,上位胸椎}",
         "id": "old502",
         "type": "extract",
         "primary": "yes",
@@ -717,7 +717,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺上叶舌段及下叶基底段可见不规则团块影,大者约3.09*2.00CM,CT值约32HU,周围可见血管集束征及毛刺征。双肺可见多发结节影,大者径约1.59CM。纵隔内可见多发肿大淋巴结影,左肺门增大。两胸腔未见积液征象。冠脉可见致密影。颈7-胸1椎可见低密度影。1、左肺上叶肺癌,纵隔内多发淋巴结转移,双肺多发转移瘤;2、颈7-胸1骨转移瘤。",
-        "output": "The primary tumor site is {左肺上叶,颈7-胸1骨}, the primary tumor size is {左肺上叶,颈7-胸1骨}, the metastasis site is {双肺,纵隔内多发淋巴结,双肺}",
+        "output": "The primary tumor site is {左肺上叶,颈7-胸1骨}, the primary tumor size is {3.09*2.00CM}, the metastasis site is {双肺,纵隔内多发淋巴结,双肺}",
         "id": "old515",
         "type": "extract",
         "primary": "yes",
@@ -730,7 +730,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶可见团块影,大小约为3.6CM×4.6CM,呈分叶状,CT值约为34HU,周围可见棘状突起,周围并可见多发小结节状、斑点状高密度影,右侧支气管管壁增厚,管腔变窄,肿块与右肺动静脉、上腔静脉关系密切。两肺纹理清晰。两肺门区未见异常。纵隔内增大的淋巴结影,径约2.0CM。两胸腔无积液征象。心脏大血管未见异常。1.右肺上叶中心型肺癌,右侧主支气管受累,与右肺动静脉、上腔静脉关系密切,受侵可能性大,建议进一步详查;2.纵隔淋巴结转移。",
-        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {右肺上叶}, the metastasis site is {纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺上叶}, the primary tumor size is {3.6CM×4.6CM}, the metastasis site is {纵隔淋巴结}",
         "id": "old531",
         "type": "extract",
         "primary": "yes",
@@ -743,7 +743,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶背段(23)粟粒影。两肺门区未见异常。所示气管支气管影通畅。纵隔内未见异常增大的淋巴结。两胸腔未见积液征象。主动脉壁及冠脉壁见弧形高密度影。右乳内见两枚团块影,边界尚清,大者径约3.8CM,CT值约40HU;右侧腋窝多发增大淋巴结,短径约1.2CM,CT值约40HU;左乳内见致密点。所示肝内密度不均。1.右肺下叶粟粒灶;2.右乳腺癌,右侧腋窝淋巴结转移,左乳内钙化灶,请结合相关检查;3.所示肝内密度不均,请详查。",
-        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {右乳腺}, the metastasis site is {右侧腋窝淋巴结}",
+        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {3.8CM}, the metastasis site is {右侧腋窝淋巴结}",
         "id": "old534",
         "type": "extract",
         "primary": "yes",
@@ -756,7 +756,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺门增大,可见团块影,最大层面大小约2.91�*�2.45CM,CT值约42HU,病变与周围组织分界欠清;左肺支气管受压变窄。左肺下叶见斑片影,边界模糊。两胸腔无积液征象。纵隔淋巴结增大,大者短径约1.96CM。右锁骨上淋巴结增大,大者短径约1.17CM。左肺中央型肺癌,纵隔及右锁骨上淋巴结转移,对比2013-5-7CT,可见左肺肿块较前变小,纵隔与右锁骨上淋巴结较前略小;左肺下叶阻塞性肺炎,较前病变范围无缩小。",
-        "output": "The primary tumor site is {左肺门}, the primary tumor size is {左肺门}, the metastasis site is {纵隔淋巴结,右锁骨上淋巴结}",
+        "output": "The primary tumor site is {左肺门}, the primary tumor size is {2.91�*�2.45CM}, the metastasis site is {纵隔淋巴结,右锁骨上淋巴结}",
         "id": "old548",
         "type": "extract",
         "primary": "yes",
@@ -769,7 +769,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺(24、27、30)粟粒灶。左肺下叶肿块,见分叶,较大层面大小约为6.6*4.8CM,CT值约30HU,增强扫描78HU、85HU、75HU,与胸膜关系密切。两胸腔无积液征象。各大血管边界清晰。纵隔内未见异常密度影。主动脉,肺动脉主干及其左右分支内造影剂密度均匀。所示肝脏低密度灶。1.左肺下叶占位,周围型肺癌可能性大;2.右肺多发粟粒灶,转移可能,随诊;3.肝脏改变,请结合腹部检查。",
-        "output": "The primary tumor site is {左肺下叶}, the primary tumor size is {左肺下叶}, the metastasis site is {右肺}",
+        "output": "The primary tumor site is {左肺下叶}, the primary tumor size is {6.6*4.8CM}, the metastasis site is {右肺}",
         "id": "old555",
         "type": "extract",
         "primary": "yes",
@@ -782,7 +782,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右侧乳腺表面皮肤光整,未见异常增厚,外侧象限内见一类圆形软组织密度影,直径约为1.53CM,CT值约为53HU,内似见点状致密影;右侧腋窝可见多个高密度结节影,大小不一,边缘光整。两肺门区未见异常;所示气管支气管影未见截断;纵隔内未见异常增大的淋巴结;两胸腔无积液征象;心脏大血管未见异常。1、右侧乳腺外侧象限软组织结节,考虑恶性可能性大,建议MR详查;2、右侧腋窝多个淋巴结肿大,考虑转移,请结合临床。。",
-        "output": "The primary tumor site is {右侧乳腺}, the primary tumor size is {右侧乳腺}, the metastasis site is {右侧腋窝多个淋巴结}",
+        "output": "The primary tumor site is {右侧乳腺}, the primary tumor size is {1.53CM}, the metastasis site is {右侧腋窝多个淋巴结}",
         "id": "old556",
         "type": "extract",
         "primary": "yes",
@@ -795,7 +795,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右肺上叶周围型肺癌;2.左肺下叶背段胸膜下小结节,随诊;3.支气管炎;4.部分上位椎体骨质改变考虑转移。两肺纹理增强,右肺上叶后段可见团块状高密度影,最大截面约3.7 X 3.7CM,其内密度均匀,CT值约48HU,邻近胸膜受牵拉;左肺下叶背段胸膜下可见小结节影,边缘光整,径约0.32CM,双肺门区未见异常,所示气管支气管影通畅;纵隔内未见异常增大的淋巴结,两胸腔未见明显积液征象,心脏不大。部分上位椎体内骨质密度减低。",
-        "output": "The primary tumor site is {右肺上叶,右肺上叶后段}, the primary tumor size is {右肺上叶,右肺上叶后段}, the metastasis site is {上位椎体}",
+        "output": "The primary tumor site is {右肺上叶,右肺上叶后段}, the primary tumor size is {3.7 X 3.7CM}, the metastasis site is {上位椎体}",
         "id": "old558",
         "type": "extract",
         "primary": "yes",
@@ -808,7 +808,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右乳区可见软组织密度团块影,大小约2.3 * 1.54CM,CT值约36HU,皮肤牵拉凹陷。双肺上叶可见稍高密度结节影,大者大小约0.6*0.45CM。两肺门区未见异常。所示气管支气管影正常。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。多个椎体、双侧多根肋骨、胸骨及左侧肱骨头可见高密度影。1.右乳腺区团块,考虑乳腺癌,右侧腋窝淋巴结增大;2.双肺上叶小结节,较2014 09 03CT片相比未见变化;3.所示多发骨转移征象。",
-        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {右乳腺}, the metastasis site is {骨}",
+        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {2.3 * 1.54CM}, the metastasis site is {骨}",
         "id": "old560",
         "type": "extract",
         "primary": "yes",
@@ -821,7 +821,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶肿块,边缘毛刺,邻近胸膜牵拉,大小约为2.45*1.88CM,CT值约55HU,双肺内可见多发结节样及粟粒样密度影,大者径约0.8CM。两肺门区未见异常。所示气管支气管影正常。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。部分上位胸椎骨密度增高。右乳腺钙化灶。1.右肺下叶后基底段团块灶,考虑恶性占位性病变,周围型肺癌可能性大,伴双肺多发转移,较前2016-05-13CT相仿;2.部分胸椎骨密度增高,较前相仿。",
-        "output": "The primary tumor site is {右肺下叶,右肺下叶后基底段}, the primary tumor size is {右肺下叶,右肺下叶后基底段}, the metastasis site is {双肺}",
+        "output": "The primary tumor site is {右肺下叶,右肺下叶后基底段}, the primary tumor size is {2.45*1.88CM}, the metastasis site is {双肺}",
         "id": "old563",
         "type": "extract",
         "primary": "yes",
@@ -834,7 +834,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1、左肺上叶周围型肺癌;2、左肺上叶、双肺下叶多发结节,转移瘤可能性大,随诊;3、纵隔多发小淋巴结。左肺上叶尖后段可见团片影,呈分叶状,大小为1.67×2.41CM,CT值为19HU,可见血管集束征和胸膜牵拉征。左肺上叶、双肺下叶可见多个结节影,大者直径为0.75CM。两肺门区未见异常。所示气管支气管影正常。纵隔多发小淋巴结。两胸腔无积液征象。心脏大血管未见异常。",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {左肺上叶,双肺下叶}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {1.67×2.41CM}, the metastasis site is {左肺上叶,双肺下叶}",
         "id": "old567",
         "type": "extract",
         "primary": "yes",
@@ -847,7 +847,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左乳术后缺如,部分胸肌存在,术区未见明显增厚及异常强化;左侧腋窝术后,结构紊乱。右乳及右侧腋窝未见明确异常。双侧肺野内可见散在多发结节灶,大者直径约2.7CM,边界较清晰。双肺门及纵隔内未见肿大淋巴结。扫描野肝脏实质内可见多发低密度灶,边缘模糊,轻度强化。扫描野内胸廓诸骨未见骨质破坏。左乳癌术后,双肺多发转移,肝转移",
-        "output": "The primary tumor site is {左乳}, the primary tumor size is {左乳}, the metastasis site is {双肺,肝}",
+        "output": "The primary tumor site is {左乳}, the primary tumor size is {None}, the metastasis site is {双肺,肝}",
         "id": "old573",
         "type": "extract",
         "primary": "yes",
@@ -860,7 +860,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.左乳占位,考虑乳癌,左腋窝淋巴结转移2.左乳局部腺体致密、强化显著,建议进一步检查2.双肺类结节灶,建议观察;双肺钙化灶左乳外下象限可见不规则结节灶,大小约1.8CM×0.9CM,边缘分叶,增强扫描呈较显著强化。另左乳内上象限腺体较致密,增强扫描强化较著。左腋窝示肿大淋巴结,短径约1.6CM。右乳未见异常。右腋窝、内乳及纵隔未见明显肿大淋巴结。双肺示少许类结节影(图3-24、39等),边缘模糊。余双肺野示少许钙化灶。",
-        "output": "The primary tumor site is {左乳}, the primary tumor size is {左乳}, the metastasis site is {左腋窝淋巴结}",
+        "output": "The primary tumor site is {左乳}, the primary tumor size is {1.8CM×0.9CM}, the metastasis site is {左腋窝淋巴结}",
         "id": "old593",
         "type": "extract",
         "primary": "yes",
@@ -873,7 +873,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺上叶尖段支气管周围可见异常密度结节影,呈分叶状,最大断面大小约为2.6*2.1CM,CT值约为34HU;双肺野可见多个高密度粟粒影与小结节影,大小不一;两肺门区未见异常;所示气管支气管影正常;纵隔内见异常增大的淋巴结;两胸腔无积液征象;心脏大血管未见异常。右肺上叶尖段周围型肺癌,纵隔淋巴结转移,双肺多发粟粒灶与小结节,考虑转移可能性大,随诊。",
-        "output": "The primary tumor site is {右肺上叶尖段}, the primary tumor size is {右肺上叶尖段}, the metastasis site is {双肺,纵隔淋巴结}",
+        "output": "The primary tumor site is {右肺上叶尖段}, the primary tumor size is {2.6*2.1CM}, the metastasis site is {双肺,纵隔淋巴结}",
         "id": "old596",
         "type": "extract",
         "primary": "yes",
@@ -886,7 +886,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "左肺上叶脊柱旁见团片状软组织密度影,边缘呈浅分叶,范围约6.5×6.0CM,其内密度不均,CT值约20-40HU,增强以后三期CT值约60HU、75HU、64HU,主动脉弓部分受包绕。左肺上叶见数个小结节,直径约0.3CM。两肺纹理增强。所示气管支气管影正常。    纵隔内见多个稍大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。1.左肺上叶团片灶,考虑周围型肺癌可能性大;纵隔内见多个稍大的淋巴结,请详查;2.左肺上叶小结节,转移不除外,请结合临床。3.右侧一后肋不整。",
-        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {左肺上叶}, the metastasis site is {左肺上叶}",
+        "output": "The primary tumor site is {左肺上叶}, the primary tumor size is {6.5×6.0CM}, the metastasis site is {左肺上叶}",
         "id": "old599",
         "type": "extract",
         "primary": "yes",
@@ -899,7 +899,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右乳占位,符合恶性,右侧腋窝淋巴结增大,下位胸椎骨转移;2.左肺下叶粟粒结节,左肺下叶条索灶。左肺下叶(14)见粟粒结节影。左肺下叶见条索影。两肺纹理清晰。两肺门区未见异常。所示气管支气管影正常。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。右乳见肿块影,径约4.8CM。右侧腋窝淋巴结增大,径约1.5CM;上位胸椎体见骨质破坏征象。",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {下位胸椎}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {4.8CM}, the metastasis site is {下位胸椎}",
         "id": "old608",
         "type": "extract",
         "primary": "yes",
@@ -912,7 +912,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "结合临床,右乳腺癌并右腋窝淋巴结肿大,考虑转移;左腋窝淋巴结肿大右乳头上方腺体内见一软组织肿块影,边缘模糊,肿块最大截面约2.9CM×1.4CM,增强后示显著强化。左侧乳腺未见爱你异常。双侧腋窝内见多发肿大淋巴结,大者位于右侧,短径约1.5CM。双侧肺野清晰,气管及各级支气管开口通畅,未见异常。",
-        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {右乳腺}, the metastasis site is {右腋窝淋巴结}",
+        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {2.9CM×1.4CM}, the metastasis site is {右腋窝淋巴结}",
         "id": "old637",
         "type": "extract",
         "primary": "yes",
@@ -925,7 +925,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "骨盆诸骨形态及信号未见明显异常。子宫大小形态可,信号未见明显异常。双侧附件区见数个卵圆形长T1长T2囊性信号影。膀胱及直肠未见明显异常。盆腔内未见明显肿大淋巴结。双肺内未见明显占位性病变。双肺门及纵隔内未见明显肿大淋巴结。右乳腺乳头上方见一肿块状等T1等T2信号,压脂序列为高信号,DWI序列为高信号,增强扫描呈较显著强化,大小约33*15MM。右腋窝见一肿大淋巴结,短径约17MM。余未见异常。考虑右乳腺癌并右腋窝淋巴结转移考虑双侧卵巢囊性灶",
-        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {右乳腺}, the metastasis site is {右腋窝淋巴结}",
+        "output": "The primary tumor site is {右乳腺}, the primary tumor size is {33*15MM}, the metastasis site is {右腋窝淋巴结}",
         "id": "old711",
         "type": "extract",
         "primary": "yes",
@@ -938,7 +938,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-04-01)右肺下叶肿块影略增大,余较前片相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,长径约为2.0CM*1.6CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {双肺,右胸膜}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {2.0CM*1.6CM}, the metastasis site is {双肺,右胸膜}",
         "id": "old737",
         "type": "extract",
         "primary": "yes",
@@ -951,7 +951,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,长径约为1.9CM*�1.6CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。1.考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-06-13)相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {双肺,右胸膜}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {1.9CM*�1.6CM}, the metastasis site is {双肺,右胸膜}",
         "id": "old750",
         "type": "extract",
         "primary": "yes",
@@ -964,7 +964,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.结合病史,考虑右乳癌并同侧腋窝淋巴转移(BI-RADS IV级)。2.双乳点片状强化灶(BI-RADS II级)。右乳外上象限可见异常信号灶,边缘分叶、毛糙,最大截面约2.7CM×2.1CM,表现为T1WI、T2WI等信号,压脂序列高信号,DWI高信号,增强后可见不均匀强化,动态增强曲线呈流出型;右乳晕区皮肤增厚。余双侧乳腺可见散在点片状强化灶。右腋窝可见多个肿大淋巴结,大者约0.8CM。左侧腋窝可见多发小淋巴结,其内可见偏心性脂肪信号。余未见异常。",
-        "output": "The primary tumor site is {右乳}, the primary tumor size is {右乳}, the metastasis site is {同侧腋窝淋巴}",
+        "output": "The primary tumor site is {右乳}, the primary tumor size is {2.7CM×2.1CM}, the metastasis site is {同侧腋窝淋巴}",
         "id": "old760",
         "type": "extract",
         "primary": "yes",
@@ -977,7 +977,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "考虑为右侧乳腺癌并右腋窝淋巴结转移,请结合临床。双侧乳腺深部见囊带状液性信号影,其内信号欠均匀,似见少许条片影;病变边缘不光滑,见多发囊状、条片状类似信号,边界不清;右乳外上象限浅表可见不规则团块影,大小约为3.6CM*2.7CM,T2WI呈高信号,增强后明显强化,动态增强曲线呈速升型。右侧腋窝区见数个肿大淋巴结,大者直径约为1.2CM。",
-        "output": "The primary tumor site is {右侧乳腺}, the primary tumor size is {右侧乳腺}, the metastasis site is {右腋窝淋巴结}",
+        "output": "The primary tumor site is {右侧乳腺}, the primary tumor size is {3.6CM*2.7CM}, the metastasis site is {右腋窝淋巴结}",
         "id": "old761",
         "type": "extract",
         "primary": "yes",
@@ -990,7 +990,7 @@
     {
         "instruction": "According to the following Chinese tumor imaging report, extract the primary tumor site, tumor size and metastasis site.\nThe report is:",
         "input": "1.右肺下叶近肺门处团块影,考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-09-13)相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,较大截面约2.25CM×2.35CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。",
-        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {右肺下叶}, the metastasis site is {双肺,右胸膜}",
+        "output": "The primary tumor site is {右肺下叶}, the primary tumor size is {2.25CM×2.35CM}, the metastasis site is {双肺,右胸膜}",
         "id": "old795",
         "type": "extract",
         "primary": "yes",
@@ -4400,159 +4400,159 @@
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.结合右乳癌术后病史,左顶叶转移。2.右上颌窦囊肿。左侧顶叶见一类圆形异常信号影,表现为T1WI中心低、边缘略高信号,T2WI及压水序列为中心高、边缘等信号,DWI为中心低、边缘高信号,增强扫描呈较显著不均匀强化,大小约1.0CM×0.8CM,周围可见斑片状长T2信号影。余脑实质内增强扫描未见异常信号及强化征象。脑室、池、脑沟裂未见异常。中线结构居中,未见移位。右上颌窦可见一长T1长T2信号结节,边界清楚。\t",
+        "input": "1.右肺下叶周围型肺癌,右肺门及纵隔淋巴结大,考虑转移可能性大,随诊;2.右肺上叶及左肺下叶炎症;3.一上位胸椎结节高密度影,随诊除外转移。双肺纹理增强,右肺上叶及左肺下叶可见斑片模糊影,右肺下叶可见团块影,分叶状,大小约3.5CM×4.9CM,CT值约31HU,增强后明显强化,各期CT值依次为41HU、37HU、32HU。右肺门及纵隔内可见肿大淋巴结,心影不大。双侧胸腔内未见明显积液征象。一上位胸椎可见结节高密度影。",
         "output": "Primary tumor site present",
         "id": "pe0",
         "type": "primary_exist",
         "primary": "yes",
-        "size": "no",
+        "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右乳",
-        "size_extract": "None",
-        "transfer_extract": "左顶叶"
+        "primary_extract": "右肺下叶",
+        "size_extract": "3.5CM×4.9CM",
+        "transfer_extract": "右肺门及纵隔淋巴结,上位胸椎"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.结合临床,右乳癌术后,肝转移2.胆囊炎。右乳术后,术区未见增厚及异常强化征象。右腋窝结构紊乱。左乳及左腋窝未见异常。纵隔内未见肿大淋巴结。双肺野清晰。 肝脏实质内可见数个低密度结节灶,大者直径约0.9CM,边缘模糊,轻度强化。胆囊充盈可,壁示增厚。胰、脾及扫描野内双肾未见异常。腹膜后未见肿大淋巴结。\t",
+        "input": "结合临床,左乳癌术后,肝内低密度灶,转移可能性大,请结合前片左乳术后,术区未见增厚及异常强化征象。左腋窝结构紊乱。右乳及右腋窝未见异常。纵隔内未见肿大淋巴结。双肺野清晰。扫描野肝实质内可见低密度结节灶,大小约1.7CM×2.3CM,边缘欠清,轻度强化。",
         "output": "Primary tumor site present",
         "id": "pe1",
         "type": "primary_exist",
         "primary": "yes",
         "size": "no",
         "transfer": "yes",
-        "primary_extract": "右乳",
+        "primary_extract": "左乳",
         "size_extract": "None",
         "transfer_extract": "肝"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "右侧小脑半球、右侧颞叶、顶叶及左额叶、顶叶、颞叶见多发结节样异常信号影,表现为T1WI低信号,T2WI及压水序列高信号,DWI序列呈等、高信号,增强扫描呈结节样或环形强化,大着直径约1.6CM位于左顶叶,部分病灶周围脑实质内见长T2水肿带。脑室、脑池未见扩张,中线结构居中。余未见异常。\t结合右肺癌病史,符合脑多发转移瘤MR表现。",
+        "input": "1.右肺上叶周围型肺癌;2.左肺下叶背段胸膜下小结节,随诊;3.支气管炎;4.部分上位椎体骨质改变考虑转移。两肺纹理增强,右肺上叶后段可见团块状高密度影,最大截面约3.7 X 3.7CM,其内密度均匀,CT值约48HU,邻近胸膜受牵拉;左肺下叶背段胸膜下可见小结节影,边缘光整,径约0.32CM,双肺门区未见异常,所示气管支气管影通畅;纵隔内未见异常增大的淋巴结,两胸腔未见明显积液征象,心脏不大。部分上位椎体内骨质密度减低。",
         "output": "Primary tumor site present",
         "id": "pe2",
         "type": "primary_exist",
         "primary": "yes",
-        "size": "no",
+        "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右肺",
-        "size_extract": "None",
-        "transfer_extract": "右侧小脑半球,右侧颞叶,顶叶,左额叶,顶叶,颞叶,脑"
+        "primary_extract": "右肺上叶,右肺上叶后段",
+        "size_extract": "3.7 X 3.7CM",
+        "transfer_extract": "上位椎体"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "结合临床,右乳腺癌并右腋窝淋巴结肿大,考虑转移;左腋窝淋巴结肿大右乳头上方腺体内见一软组织肿块影,边缘模糊,肿块最大截面约2.9CM×1.4CM,增强后示显著强化。左侧乳腺未见爱你异常。双侧腋窝内见多发肿大淋巴结,大者位于右侧,短径约1.5CM。双侧肺野清晰,气管及各级支气管开口通畅,未见异常。",
+        "input": "1.左乳占位,考虑乳癌,左腋窝淋巴结转移2.左乳局部腺体致密、强化显著,建议进一步检查2.双肺类结节灶,建议观察;双肺钙化灶左乳外下象限可见不规则结节灶,大小约1.8CM×0.9CM,边缘分叶,增强扫描呈较显著强化。另左乳内上象限腺体较致密,增强扫描强化较著。左腋窝示肿大淋巴结,短径约1.6CM。右乳未见异常。右腋窝、内乳及纵隔未见明显肿大淋巴结。双肺示少许类结节影(图3-24、39等),边缘模糊。余双肺野示少许钙化灶。",
         "output": "Primary tumor site present",
         "id": "pe3",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右乳腺",
-        "size_extract": "2.9CM×1.4CM",
-        "transfer_extract": "右腋窝淋巴结"
+        "primary_extract": "左乳",
+        "size_extract": "1.8CM×0.9CM",
+        "transfer_extract": "左腋窝淋巴结"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.结合乳癌病史,左小脑半球转移瘤,及左枕骨转移灶; 2.双上颌窦炎。左侧小脑半球示一结节灶,截面约3.2CM×2.6CM,边缘较清,呈等T1等T2信号,T2-FLAIR呈等高混杂信号,增强扫描呈明显不均匀强化;病变周围示片状长T2水肿带;第四脑室受压右移,中线结构局部右移。左枕骨示斑片状等T1等T2信号,T2-FLAIR呈低信号,增强扫描呈明显不均匀强化。扫描野内双侧上颌窦内示液性信号影。\t",
+        "input": "右肺下叶可见软组织密度肿块影,大小约为5.1*4.0CM,CT值约为10-36HU;双肺可见多个小结节影与粟粒影;右肺上叶可见致密钙化灶;右胸腔积液征象;心脏大血管未见异常。左侧肩胛骨可见骨质破坏,双侧多个肋骨、胸椎密度不均匀。1.右肺下叶恶性肿物,双肺多个小结节与粟粒灶,右侧胸腔少量积液;2.左侧肩胛骨骨质破坏,双侧多个肋骨、胸椎密度不均匀,均为骨转移改变;3.右肺上叶钙化灶。",
         "output": "Primary tumor site present",
         "id": "pe4",
-        "type": "primary_exist",
-        "primary": "yes",
-        "size": "no",
-        "transfer": "yes",
-        "primary_extract": "乳",
-        "size_extract": "None",
-        "transfer_extract": "左小脑半球,左枕骨"
-    },
-    {
-        "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.右肺下叶中央型肺癌可能性大;2.双肺小结节,不除外转移,随诊;3.纵隔小淋巴结,左肺上叶条索灶。右肺下叶(HR 88)见肿块影,界清,大小3.8CM*3.9CM,可见浅分叶及短毛刺,平扫CT值53HU,增强三期:62HU、65HU、72HU。右肺上叶(HR 84)、中叶(88、90)、左肺上叶舌段(102)见结节影,径约0.8CM。左肺上叶见条索影。两肺纹理清晰。两肺门区未见异常。所示气管支气管影通畅。纵隔内见多发小淋巴结,短径1.1CM。两胸腔未见积液征象。心脏大血管未见异常。",
-        "output": "Primary tumor site present",
-        "id": "pe5",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
         "primary_extract": "右肺下叶",
-        "size_extract": "3.8CM*3.9CM",
-        "transfer_extract": "双肺"
+        "size_extract": "5.1*4.0CM",
+        "transfer_extract": "左侧肩胛骨,双侧多个肋骨,胸椎"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "右侧乳腺表面皮肤光整,未见异常增厚,外侧象限内见一类圆形软组织密度影,直径约为1.53CM,CT值约为53HU,内似见点状致密影;右侧腋窝可见多个高密度结节影,大小不一,边缘光整。两肺门区未见异常;所示气管支气管影未见截断;纵隔内未见异常增大的淋巴结;两胸腔无积液征象;心脏大血管未见异常。1、右侧乳腺外侧象限软组织结节,考虑恶性可能性大,建议MR详查;2、右侧腋窝多个淋巴结肿大,考虑转移,请结合临床。。",
+        "input": "左乳外侧见团块状影,边缘不清,内见弥漫细小多形性钙化,增强后呈较显著不均匀强化;同侧乳晕区皮肤略增厚,乳头凹陷。左侧腋窝见大者短径约0.6CM肿大淋巴结,强化较显著。双肺野清晰。扫描野内肝内见大者直径约0.6CM低密度结节,边缘清晰或欠清晰,未见强化。\t1.左乳癌并左侧腋窝淋巴结转移  2.肝内低密度灶,部分为囊肿,部分囊肿可能,建议观察。",
+        "output": "Primary tumor site present",
+        "id": "pe5",
+        "type": "primary_exist",
+        "primary": "yes",
+        "size": "no",
+        "transfer": "yes",
+        "primary_extract": "左乳外侧",
+        "size_extract": "None",
+        "transfer_extract": "左侧腋窝淋巴结"
+    },
+    {
+        "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
+        "input": "右肺上叶后段近胸膜处示软组织结节灶,形态不规则,截面约2.4CM�×2.2CM。双肺内示泡状过度透光区。纵隔内气管右旁、腔静脉后间隙、隆突下、右肺门示增大淋巴结,大者短径约1.4CM。右侧胸膜增厚呈结节及肿块状。右侧胸腔示液体密度影。\t1.结合临床,右肺癌,较前(2014-11-14)略似饱满;右肺门并纵隔淋巴结转移,较前部分进展,部分变化不著;右侧胸膜转移,较前部分好转,部分变化不著;右侧胸腔积液,较前略减少。",
         "output": "Primary tumor site present",
         "id": "pe6",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右侧乳腺",
-        "size_extract": "1.53CM",
-        "transfer_extract": "右侧腋窝多个淋巴结"
+        "primary_extract": "右肺上叶后段",
+        "size_extract": "2.4CM�×2.2CM",
+        "transfer_extract": "纵隔淋巴结,右侧胸膜"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "左肺癌并左肺多发、左胸膜、叶间裂及心包转移,较2011-02-21片进展,请结合临床。左下肺见不规则形软组织密度影,部分病灶相互融合,最大截面约7.30×5.50CM,CT值约49HU,左肺下叶支气管变窄,远端截断,左肺内可见多发大小不等类圆形高密度影;纵隔内可见稍增大的淋巴结影;左侧胸膜及叶间裂明显增厚,可见条形及结节样软组织密度影,左侧心隔角区可见多发结节影。",
+        "input": "右肺门区可见片状软组织密度影,范围约为4.89*3.35CM,CT值约为36HU,边界不清;右肺中叶、右肺下叶部分支气管狭窄,远端闭塞;两肺内可见大片状高密度影,边缘模糊,右肺为著;双侧胸腔内可见弧形液性密度影;纵隔内可见肿大淋巴结影,径约2.67CM;主动脉、双侧冠状动脉走行区内可见条状高密度钙化影。1.右肺门肿块,考虑中央型肺癌并阻塞性炎症;2.两肺间质性炎症;3.双侧胸腔积液;4.纵隔淋巴结肿大,转移不除外。",
         "output": "Primary tumor site present",
         "id": "pe7",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "左下肺",
-        "size_extract": "7.30×5.50CM",
-        "transfer_extract": "左肺,左胸膜,叶间裂,心包"
+        "primary_extract": "右肺门",
+        "size_extract": "4.89*3.35CM",
+        "transfer_extract": "纵隔淋巴结"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "会诊*******(2016-7-21)  右肺尖段示不规则结节灶,边界清晰,大小约为1.0CM×0.9CM,增强扫描呈中度强化。右肺门及纵隔多发淋巴结肿大,部分融合成团,大者短径约为4.5CM,包绕挤压邻近组织。  肝脏大小形态可,肝左叶示低密度影,边界清晰,增强扫描未见强化。胆囊不大,壁略厚。胰腺、双肾、双侧肾上腺及脾未见异常。腹腔及腹膜后未见肿大淋巴结。\t1.考虑右肺上叶癌并纵隔及右肺门淋巴结转移;2.肝囊肿、胆囊炎。",
+        "input": "1.右肺下叶近肺门处团块影,考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-09-13)相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,较大截面约2.25CM×2.35CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。",
         "output": "Primary tumor site present",
         "id": "pe8",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右肺上叶",
-        "size_extract": "1.0CM×0.9CM",
-        "transfer_extract": "纵隔及右肺门淋巴结"
+        "primary_extract": "右肺下叶",
+        "size_extract": "2.25CM×2.35CM",
+        "transfer_extract": "双肺,右胸膜"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "右下肺门区可见一直径4.1CM大小的肿块,密度均匀,CT值为15HU,增强后约46、40HU;下叶支气管管腔消失,其周围结构被肿块侵犯。右肺下叶可见斑片影,边界模糊不清。隆突下淋巴结明显增大,短径约2.3。双侧胸腔未见积液征象。1.右下肺中央型肺癌合并阻塞性炎症,纵膈淋巴结转移;2.肺气肿。",
+        "input": "左肺上叶脊柱旁见团片状软组织密度影,边缘呈浅分叶,范围约6.5×6.0CM,其内密度不均,CT值约20-40HU,增强以后三期CT值约60HU、75HU、64HU,主动脉弓部分受包绕。左肺上叶见数个小结节,直径约0.3CM。两肺纹理增强。所示气管支气管影正常。    纵隔内见多个稍大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。1.左肺上叶团片灶,考虑周围型肺癌可能性大;纵隔内见多个稍大的淋巴结,请详查;2.左肺上叶小结节,转移不除外,请结合临床。3.右侧一后肋不整。",
         "output": "Primary tumor site present",
         "id": "pe9",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右下肺",
-        "size_extract": "4.1CM",
-        "transfer_extract": "纵膈淋巴结"
+        "primary_extract": "左肺上叶",
+        "size_extract": "6.5×6.0CM",
+        "transfer_extract": "左肺上叶"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "结合病史,右乳癌累及右侧乳头、右腋窝淋巴结转移治疗后,较前(2014-06-19)MR片示好转。右乳头后方见一不规则异常信号影,边缘分叶、毛糙,局部累及右乳头致其凹陷,邻近皮肤略示增厚,表现为T1WI低信号,T2WI高信号,T2压脂序列高信号,DWI呈高信号,增强扫描可见显著强化,大小约1.5CM×1.7CM×2.0CM,时间-信号强度曲线为平台型。左乳增强前后未见异常。所扫双侧腋窝未见明显肿大淋巴结。余未见异常。",
+        "input": "左乳术后缺如,部分胸肌存在,术区未见明显增厚及异常强化;左侧腋窝术后,结构紊乱。右乳及右侧腋窝未见明确异常。双侧肺野内可见散在多发结节灶,大者直径约2.7CM,边界较清晰。双肺门及纵隔内未见肿大淋巴结。扫描野肝脏实质内可见多发低密度灶,边缘模糊,轻度强化。扫描野内胸廓诸骨未见骨质破坏。左乳癌术后,双肺多发转移,肝转移",
         "output": "Primary tumor site present",
         "id": "pe10",
         "type": "primary_exist",
         "primary": "yes",
-        "size": "yes",
+        "size": "no",
         "transfer": "yes",
-        "primary_extract": "右乳",
-        "size_extract": "1.5CM×1.7CM×2.0CM",
-        "transfer_extract": "右侧乳头,右腋窝淋巴结"
+        "primary_extract": "左乳",
+        "size_extract": "None",
+        "transfer_extract": "双肺,肝"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.结合肺癌病史,左额叶、左顶叶转移。2.脑多发小缺血灶。左额叶近颅顶处可见一0.9CM×1.1CM×1.4CM的类卵圆形结节,有分叶,周围伴有斑片状长T2信号的水肿带,结节表现为T1加权像略低信号,T2加权像略高信号,压水像及DWI为高信号,不均匀强化。左顶叶可见一点状强化灶。双额叶可见散在小点状等T1略长T2信号影,压水像为高信号,无强化。脑室系统无扩大。中线结构居中。余未见异常。\t",
+        "input": "左肺上叶舌段及下叶基底段可见不规则团块影,大者约1.73*2.53CM,CT值约35HU,周围可见血管集束征及毛刺征。双肺可见多发结节影,大者径约0.63CM。两肺支气管血管束清晰。两肺门稍饱满。所示气管支气管影通畅。两胸腔未见积液征象。冠脉可见致密影。1.左肺不规则团块影,考虑周围型肺癌;2.双肺多发结节影,转移不除外,请结合临床。",
         "output": "Primary tumor site present",
         "id": "pe11",
         "type": "primary_exist",
         "primary": "yes",
-        "size": "no",
+        "size": "yes",
         "transfer": "yes",
-        "primary_extract": "肺",
-        "size_extract": "None",
-        "transfer_extract": "左额叶,左顶叶"
+        "primary_extract": "左肺上叶舌段及下叶基底段",
+        "size_extract": "1.73*2.53CM",
+        "transfer_extract": "双肺多发结节"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
@@ -4569,33 +4569,33 @@
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "结合临床,左乳癌术后,肝内低密度灶,转移可能性大,请结合前片左乳术后,术区未见增厚及异常强化征象。左腋窝结构紊乱。右乳及右腋窝未见异常。纵隔内未见肿大淋巴结。双肺野清晰。扫描野肝实质内可见低密度结节灶,大小约1.7CM×2.3CM,边缘欠清,轻度强化。",
+        "input": "右肺下叶肿块,边缘毛刺,邻近胸膜牵拉,大小约为2.45*1.88CM,CT值约55HU,双肺内可见多发结节样及粟粒样密度影,大者径约0.8CM。两肺门区未见异常。所示气管支气管影正常。纵隔内未见异常增大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。部分上位胸椎骨密度增高。右乳腺钙化灶。1.右肺下叶后基底段团块灶,考虑恶性占位性病变,周围型肺癌可能性大,伴双肺多发转移,较前2016-05-13CT相仿;2.部分胸椎骨密度增高,较前相仿。",
         "output": "Primary tumor site present",
         "id": "pe13",
         "type": "primary_exist",
         "primary": "yes",
-        "size": "no",
+        "size": "yes",
         "transfer": "yes",
-        "primary_extract": "左乳",
-        "size_extract": "None",
-        "transfer_extract": "肝"
+        "primary_extract": "右肺下叶,右肺下叶后基底段",
+        "size_extract": "2.45*1.88CM",
+        "transfer_extract": "双肺"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-04-01)右肺下叶肿块影略增大,余较前片相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,长径约为2.0CM*1.6CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。",
+        "input": "1.结合肺癌病史,左额叶、左顶叶转移。2.脑多发小缺血灶。左额叶近颅顶处可见一0.9CM×1.1CM×1.4CM的类卵圆形结节,有分叶,周围伴有斑片状长T2信号的水肿带,结节表现为T1加权像略低信号,T2加权像略高信号,压水像及DWI为高信号,不均匀强化。左顶叶可见一点状强化灶。双额叶可见散在小点状等T1略长T2信号影,压水像为高信号,无强化。脑室系统无扩大。中线结构居中。余未见异常。\t",
         "output": "Primary tumor site present",
         "id": "pe14",
         "type": "primary_exist",
         "primary": "yes",
-        "size": "yes",
+        "size": "no",
         "transfer": "yes",
-        "primary_extract": "右肺下叶",
-        "size_extract": "2.0CM*1.6CM",
-        "transfer_extract": "双肺,右胸膜"
+        "primary_extract": "肺",
+        "size_extract": "None",
+        "transfer_extract": "左额叶,左顶叶"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.右肺下叶近肺门处团块影,考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-09-13)相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,较大截面约2.25CM×2.35CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。",
+        "input": "右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,长径约为1.9CM*�1.6CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。1.考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-06-13)相仿;2.心包少量积液,较前相仿;3.甲状腺改变,请结合临床。",
         "output": "Primary tumor site present",
         "id": "pe15",
         "type": "primary_exist",
@@ -4603,60 +4603,60 @@
         "size": "yes",
         "transfer": "yes",
         "primary_extract": "右肺下叶",
-        "size_extract": "2.25CM×2.35CM",
+        "size_extract": "1.9CM*�1.6CM",
         "transfer_extract": "双肺,右胸膜"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "右肺下叶可见不规则软组织密度影,与右肺门分界不清,边缘毛糙,分叶状,长径约为1.6CM*1.5CM,右侧胸膜增厚、斜裂增厚、右肺中叶条片状高密度影。双肺可见大小不一结节影,部分边缘毛糙;纵隔内未见增大淋巴结影。心包内见少许液性密度影。甲状腺增大。1.考虑右肺下叶肺癌,并双肺、右胸膜多发转移;较前CT(2016-01-05)右肺下叶肿块影略小,余较前片相仿。2.心包积液;3.甲状腺大;请结合临床。",
+        "input": "右肺上叶尖段支气管周围可见异常密度结节影,呈分叶状,最大断面大小约为2.6*2.1CM,CT值约为34HU;双肺野可见多个高密度粟粒影与小结节影,大小不一;两肺门区未见异常;所示气管支气管影正常;纵隔内见异常增大的淋巴结;两胸腔无积液征象;心脏大血管未见异常。右肺上叶尖段周围型肺癌,纵隔淋巴结转移,双肺多发粟粒灶与小结节,考虑转移可能性大,随诊。",
         "output": "Primary tumor site present",
         "id": "pe16",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "右肺下叶",
-        "size_extract": "1.6CM*1.5CM",
-        "transfer_extract": "双肺,右胸膜"
+        "primary_extract": "右肺上叶尖段",
+        "size_extract": "2.6*2.1CM",
+        "transfer_extract": "双肺,纵隔淋巴结"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "左乳呈少量腺体型。其外上象限不规则肿块影,大小约4.0M×4.5CM,其密度增高、不均匀,边缘毛糙、不整。乳头无凹陷,皮肤无增厚。腋窝可见一直径约1.2CM肿大淋巴结影。\t左乳癌并同侧腋窝淋巴结转移。",
+        "input": "右肺下叶周围型肺癌,双肺及纵隔淋巴结多发转移。右肺下叶后基底段团块影,大小约4.02×5.92CM,CT值约38HU,远端支气管截断;双肺多发粟粒影、结节影;双肺纹理增强,双侧支气管未见确切狭窄征象。两肺门大小、形态未见明显异常。纵隔及右侧锁骨上多发肿大淋巴结,大小约3.92CM,心脏、血管未见异常。双侧胸膜未见增厚,未见双侧胸腔积液征象。",
         "output": "Primary tumor site present",
         "id": "pe17",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
-        "primary_extract": "左乳",
-        "size_extract": "4.0M×4.5CM",
-        "transfer_extract": "同侧腋窝淋巴结"
+        "primary_extract": "右肺下叶后基底段",
+        "size_extract": "4.02×5.92CM",
+        "transfer_extract": "双肺,纵隔淋巴结"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "左肺上叶脊柱旁见团片状软组织密度影,边缘呈浅分叶,范围约6.5×6.0CM,其内密度不均,CT值约20-40HU,增强以后三期CT值约60HU、75HU、64HU,主动脉弓部分受包绕。左肺上叶见数个小结节,直径约0.3CM。两肺纹理增强。所示气管支气管影正常。    纵隔内见多个稍大的淋巴结。两胸腔无积液征象。心脏大血管未见异常。1.左肺上叶团片灶,考虑周围型肺癌可能性大;纵隔内见多个稍大的淋巴结,请详查;2.左肺上叶小结节,转移不除外,请结合临床。3.右侧一后肋不整。",
+        "input": "左肺癌术后,左侧胸膜及淋巴结转移,少量胸腔积液。会诊*********CT(2016-09-12)  左肺下叶术后缺如,左肺门见高密度吻合器影,残余左肺见索条影,左侧胸膜见多发结节灶,较大者位于下舌段近纵隔处,大小约2.5CM×1.5CM,呈均匀强化;左侧膈淋巴结肿大。左侧胸膜腔内见少量液性密度影,呈包裹性改变。右肺上叶后段胸膜下小结节灶,大小约0.4CM×0.3CM。\t",
         "output": "Primary tumor site present",
         "id": "pe18",
+        "type": "primary_exist",
+        "primary": "yes",
+        "size": "no",
+        "transfer": "yes",
+        "primary_extract": "左肺下叶",
+        "size_extract": "None",
+        "transfer_extract": "左侧胸膜,淋巴结"
+    },
+    {
+        "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
+        "input": "1、左肺上叶周围型肺癌;2、左肺上叶、双肺下叶多发结节,转移瘤可能性大,随诊;3、纵隔多发小淋巴结。左肺上叶尖后段可见团片影,呈分叶状,大小为1.67×2.41CM,CT值为19HU,可见血管集束征和胸膜牵拉征。左肺上叶、双肺下叶可见多个结节影,大者直径为0.75CM。两肺门区未见异常。所示气管支气管影正常。纵隔多发小淋巴结。两胸腔无积液征象。心脏大血管未见异常。",
+        "output": "Primary tumor site present",
+        "id": "pe19",
         "type": "primary_exist",
         "primary": "yes",
         "size": "yes",
         "transfer": "yes",
         "primary_extract": "左肺上叶",
-        "size_extract": "6.5×6.0CM",
-        "transfer_extract": "左肺上叶"
-    },
-    {
-        "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
-        "input": "1.结合乳癌病史,脑多发转移瘤。2.左上颌窦炎。脑干、双侧大脑及小脑半球见多发大小不等的结节样异常信号,表现为T1WI低、略低信号,T2WI略高、高信号,压水序列高信号,DWI序列低、高信号,增强扫描呈结节样、环形或不均匀强化,大者约1.6CM×2.1CM,部分病变周围脑白质见小片状或片状长T2信号水肿带,四脑室及双侧侧脑室略受压变形。中线结构居中。左上颌窦可见小片状长T2信号区。余未见异常。\t",
-        "output": "Primary tumor site present",
-        "id": "pe19",
-        "type": "primary_exist",
-        "primary": "yes",
-        "size": "no",
-        "transfer": "yes",
-        "primary_extract": "乳",
-        "size_extract": "None",
-        "transfer_extract": "脑"
+        "size_extract": "1.67×2.41CM",
+        "transfer_extract": "左肺上叶,双肺下叶"
     },
     {
         "instruction": "According to the following Chinese tumor imaging report, tell whether there is primary tumor site present.\nThe report is:",
